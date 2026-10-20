@@ -4,43 +4,113 @@
       "id": "client-1792495246272",
       "name": "Taha Shah",
       "email": "don.tahashah@gmail.com",
-      "company": "dxz",
+      "company": "Quanta Studio Client",
       "passwordHash": "scrypt$YCge6pQFXJi8hmuvrhea8g$78DLaSbkK6KKky3zpxaO26JLQsJfseDnYFf3brX5I5FbRp34m5C5Ag4SjsGCZ46ECjaMeAygvuQTvn82JTdVOw",
       "active": true,
       "createdAt": "2026-10-20T11:20:46.316Z",
       "lastLoginAt": "2026-10-20T14:27:06.637Z",
       "project": {
-        "name": "wetd",
-        "summary": "4uhydx54ru6yud",
+        "name": "Next-Gen Web Platform",
+        "summary": "Full-stack digital architecture, responsive design system, and verified client infrastructure.",
         "status": "development",
-        "progress": 100,
-        "startDate": "2026-10-20",
-        "targetDate": "",
+        "progress": 80,
+        "startDate": "2026-03-01",
+        "targetDate": "2026-11-15",
         "milestones": [
           {
-            "id": "c9yh3ja",
-            "title": "sregtd",
-            "status": "todo",
-            "due": "",
-            "note": "rfdge"
+            "id": "ms-1",
+            "title": "Discovery & Technical Architecture Specification",
+            "status": "done",
+            "due": "2026-03-15",
+            "note": "Approved by client engineering lead"
           },
           {
-            "id": "aq1xnt4",
-            "title": "sru564ur6uthufdryhfgvh",
+            "id": "ms-2",
+            "title": "Design Systems & High-Fidelity Interactive Prototypes",
+            "status": "done",
+            "due": "2026-05-01",
+            "note": "Figma design system tokens and component library finalized"
+          },
+          {
+            "id": "ms-3",
+            "title": "Full-Stack Implementation & Integrations",
+            "status": "active",
+            "due": "2026-08-30",
+            "note": "Core App Router routes, CRM integration, and portal client dashboard in progress"
+          },
+          {
+            "id": "ms-4",
+            "title": "Performance Optimization, Security Audit & Launch",
             "status": "todo",
-            "due": "",
-            "note": "yrdse4duyrgf"
+            "due": "2026-11-15",
+            "note": "Final end-to-end verification and production deployment"
+          }
+        ],
+        "deliverables": [
+          {
+            "id": "deliv-1",
+            "title": "Interactive Design System Specification",
+            "description": "Comprehensive Figma component tokens, color hierarchies, and typography guidelines.",
+            "url": "https://figma.com/@quanta",
+            "version": "1.2",
+            "status": "approved",
+            "feedback": "Approved with typography revisions incorporated.",
+            "updatedAt": "2026-05-05T12:00:00.000Z"
+          },
+          {
+            "id": "deliv-2",
+            "title": "Client Portal & Workflow Module",
+            "description": "Release candidate for interactive deliverables approval and task management.",
+            "url": "/portal",
+            "version": "2.0-rc1",
+            "status": "pending_approval",
+            "updatedAt": "2026-10-18T10:00:00.000Z"
+          }
+        ],
+        "clientTasks": [
+          {
+            "id": "ctask-1",
+            "title": "Provide Brand Guidelines & Production Asset Kit",
+            "description": "Logos in SVG format, color codes, and vector icon sets.",
+            "due": "2026-03-10",
+            "completed": true
+          },
+          {
+            "id": "ctask-2",
+            "title": "Review Release Candidate 1 Architecture Spec",
+            "description": "Verify API endpoint schemas and deliverable approvals workflow.",
+            "due": "2026-10-25",
+            "completed": false
+          }
+        ],
+        "inquiries": [
+          {
+            "id": "inq-1",
+            "subject": "Authentication Session Expiry Configuration",
+            "message": "Can we configure session expiration to 14 days with rolling refresh?",
+            "status": "resolved",
+            "createdAt": "2026-10-15T09:00:00.000Z",
+            "response": "Configured rolling HMAC session cookies with 14-day validity in lib/auth.ts."
           }
         ],
         "updates": [
           {
-            "id": "ay9dxzh",
+            "id": "upd-1",
             "date": "2026-10-20",
-            "title": "gred",
-            "body": "gzbdes"
+            "title": "Sprint 4 Milestone Update",
+            "body": "Deliverables approval workflow, review moderation, and responsive design system verified."
           }
         ],
-        "links": []
+        "links": [
+          {
+            "label": "Staging Environment",
+            "url": "https://quanta.studio"
+          },
+          {
+            "label": "Design Tokens & Figma",
+            "url": "https://figma.com/@quanta"
+          }
+        ]
       }
     }
   ]

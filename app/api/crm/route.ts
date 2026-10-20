@@ -190,7 +190,8 @@ export async function POST(request: Request) {
         const lead = leads.find((l) => l.id === leadId);
         if (!lead) return NextResponse.json({ error: "Lead not found." }, { status: 404 });
 
-        const email = (clientEmail || `${lead.contactName.toLowerCase().replace(/\s+/g, ".")}@example.com`).trim();
+        const contact = lead.contactId ? listContacts().find((c) => c.id === lead.contactId) : undefined;
+        const email = (clientEmail || contact?.email || `${lead.contactName.toLowerCase().replace(/\s+/g, ".")}@example.com`).trim();
         const password = initialPassword || "Quanta2026!";
 
         // Update lead stage to won

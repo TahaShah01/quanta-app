@@ -5,6 +5,7 @@ import { findById, toPublic, updateAccount, type PortalDeliverable, type PortalC
 import { findReviewByPortalAccountId } from "@/lib/reviews";
 import { logActivity, createTask } from "@/lib/crm";
 import { getFeatures } from "@/lib/site";
+import { createMessage } from "@/lib/messages";
 
 // Reads the session cookie, so it is always rendered per request (the portal polls this).
 export async function GET() {
@@ -185,6 +186,18 @@ export async function PUT(request: Request) {
         status: "open",
         createdAt: new Date().toISOString(),
       };
+
+      // Also route to unified admin messages portal
+      createMessage({
+        name: account.name,
+        email: account.email,
+        company: account.company || undefined,
+        subject: newInquiry.subject,
+        message: newInquiry.message,
+        source: "client_portal",
+        portalAccountId: account.id,
+        portalInquiryId: newInquiry.id,
+      });
 
       const inquiries = [newInquiry, ...(currentProject.inquiries || [])];
 

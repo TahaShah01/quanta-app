@@ -40,7 +40,7 @@ function formatCity(timeZone: string) {
 }
 
 export function Footer() {
-  const { settings, features } = useSite();
+  const { settings, features, navigation } = useSite();
   const [copied, setCopied] = useState(false);
 
   const year = useSyncExternalStore(
@@ -54,7 +54,7 @@ export function Footer() {
   const timeZone = settings?.timezone || "Asia/Karachi";
   const clock = useStudioClock(timeZone);
   const city = formatCity(timeZone);
-  const socials = getSocialLinks(settings?.socials);
+  const socials = getSocialLinks(settings?.socials, settings?.socialLinks);
 
   const waConfig = settings?.whatsapp;
   const showWhatsApp = !!(waConfig?.visible && waConfig?.number?.trim());
@@ -217,51 +217,40 @@ export function Footer() {
 
           {/* Right Column: Structured Navigation Clusters */}
           <div className="grid grid-cols-2 gap-8 md:col-span-7 lg:col-span-6 sm:grid-cols-2 lg:grid-cols-2">
-            {/* Cluster 1: Explore Studio */}
-            <div className="flex flex-col gap-4">
-              <h3 className="text-label font-mono text-[11px] text-[var(--muted)]">
-                01 // Explore
-              </h3>
-              <ul className="flex flex-col gap-2.5">
-                {navExplore.map((item) => (
-                  <li key={item.href}>
-                    <Link
-                      href={item.href}
-                      className="group inline-flex items-center gap-1.5 text-sm text-[var(--secondary)] transition-colors hover:text-[var(--foreground)]"
-                    >
-                      <span>{item.label}</span>
-                      <ArrowUpRight
-                        size={12}
-                        className="opacity-0 -translate-x-1 translate-y-1 transition-all group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0 text-[var(--accent)]"
-                      />
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Cluster 2: Ecosystem & Operations */}
-            <div className="flex flex-col gap-4">
-              <h3 className="text-label font-mono text-[11px] text-[var(--muted)]">
-                02 // Platform
-              </h3>
-              <ul className="flex flex-col gap-2.5">
-                {navPlatform.map((item) => (
-                  <li key={item.href}>
-                    <Link
-                      href={item.href}
-                      className="group inline-flex items-center gap-1.5 text-sm text-[var(--secondary)] transition-colors hover:text-[var(--foreground)]"
-                    >
-                      <span>{item.label}</span>
-                      <ArrowUpRight
-                        size={12}
-                        className="opacity-0 -translate-x-1 translate-y-1 transition-all group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0 text-[var(--accent)]"
-                      />
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            {(navigation?.footer?.columns && navigation.footer.columns.length > 0
+              ? navigation.footer.columns.map((col, idx) => ({
+                  title: `0${idx + 1} // ${col.title}`,
+                  links: col.links.filter(
+                    (link) => !(link.feature === "portal" && features?.portal === false)
+                  ),
+                }))
+              : [
+                  { title: "01 // Explore", links: navExplore },
+                  { title: "02 // Platform", links: navPlatform },
+                ]
+            ).map((cluster, cIdx) => (
+              <div key={cIdx} className="flex flex-col gap-4">
+                <h3 className="text-label font-mono text-[11px] text-[var(--muted)]">
+                  {cluster.title}
+                </h3>
+                <ul className="flex flex-col gap-2.5">
+                  {cluster.links.map((item) => (
+                    <li key={item.href}>
+                      <Link
+                        href={item.href}
+                        className="group inline-flex items-center gap-1.5 text-sm text-[var(--secondary)] transition-colors hover:text-[var(--foreground)]"
+                      >
+                        <span>{item.label}</span>
+                        <ArrowUpRight
+                          size={12}
+                          className="opacity-0 -translate-x-1 translate-y-1 transition-all group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0 text-[var(--accent)]"
+                        />
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
 
             {/* Cluster 3: Presence & Verified Socials (Spans 2 cols on mobile/tablet) */}
             <div className="col-span-2 border-t border-[var(--border)] pt-6 mt-2 flex flex-col gap-3">
@@ -274,19 +263,26 @@ export function Footer() {
                 </span>
               </div>
               <div className="flex flex-wrap gap-2 pt-1">
-                {socials.map(({ key, label, href, Icon }) => (
-                  <a
-                    key={key}
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 rounded-lg border border-[var(--border)] bg-[var(--surface)] hover:bg-[var(--surface-hover)] px-3 py-1.5 text-xs text-[var(--secondary)] transition-all hover:border-[var(--accent)] hover:text-[var(--foreground)]"
-                  >
-                    <Icon size={13} />
-                    <span>{label}</span>
-                    <ArrowUpRight size={10} className="text-[var(--muted)]" />
-                  </a>
-                ))}
+                {socials.length > 0 ? (
+                  socials.map(({ key, label, ariaLabel, href, Icon }) => (
+                    <a
+                      key={key}
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={ariaLabel || `Visit Quanta on ${label}`}
+                      className="inline-flex items-center gap-2 rounded-lg border border-[var(--border)] bg-[var(--surface)] hover:bg-[var(--surface-hover)] px-3 py-1.5 text-xs text-[var(--secondary)] transition-all hover:border-[var(--accent)] hover:text-[var(--foreground)]"
+                    >
+                      <Icon size={13} />
+                      <span>{label}</span>
+                      <ArrowUpRight size={10} className="text-[var(--muted)]" />
+                    </a>
+                  ))
+                ) : (
+                  <span className="font-mono text-xs text-[var(--muted)]">
+                    Social links configurable in studio admin
+                  </span>
+                )}
               </div>
             </div>
           </div>

@@ -84,54 +84,5 @@
     "featured": true,
     "published": true,
     "order": 3
-  },
-  {
-    "title": "lORA",
-    "slug": "lora",
-    "category": "Web Platform",
-    "description": "DFGSDFGS",
-    "overview": "DFSGDFS",
-    "approach": "DFSFDS",
-    "outcome": "FSDDFS",
-    "results": [],
-    "technologies": [
-      "hTML"
-    ],
-    "images": [],
-    "year": "2026",
-    "teamMembers": [
-      "member-yousaf",
-      "member-zeeshan"
-    ],
-    "liveUrl": "",
-    "visualType": "alpha",
-    "featured": true,
-    "published": true,
-    "id": "project-1791971888211",
-    "num": "04",
-    "order": 4
-  },
-  {
-    "title": "Faseeh",
-    "slug": "faseeh",
-    "category": "",
-    "description": "edfswetwrerwt",
-    "overview": "yreterytterert",
-    "approach": "hfddfsggdfertgfd",
-    "outcome": "rsegsdfgrsfg",
-    "results": [],
-    "technologies": [
-      "any"
-    ],
-    "images": [],
-    "year": "2026",
-    "teamMembers": [],
-    "liveUrl": "",
-    "visualType": "alpha",
-    "featured": false,
-    "published": true,
-    "id": "project-1791986394754",
-    "num": "05",
-    "order": 5
   }
 ]

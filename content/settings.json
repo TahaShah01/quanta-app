@@ -11,6 +11,58 @@
     "github": "",
     "linkedin": ""
   },
+  "socialLinks": [
+    {
+      "id": "social-twitter",
+      "platform": "twitter",
+      "label": "X (Twitter)",
+      "ariaLabel": "Follow Quanta on X",
+      "url": "",
+      "icon": "twitter",
+      "enabled": true,
+      "order": 1
+    },
+    {
+      "id": "social-instagram",
+      "platform": "instagram",
+      "label": "Instagram",
+      "ariaLabel": "Follow Quanta on Instagram",
+      "url": "",
+      "icon": "instagram",
+      "enabled": true,
+      "order": 2
+    },
+    {
+      "id": "social-facebook",
+      "platform": "facebook",
+      "label": "Facebook",
+      "ariaLabel": "Follow Quanta on Facebook",
+      "url": "",
+      "icon": "facebook",
+      "enabled": true,
+      "order": 3
+    },
+    {
+      "id": "social-linkedin",
+      "platform": "linkedin",
+      "label": "LinkedIn",
+      "ariaLabel": "Connect with Quanta on LinkedIn",
+      "url": "",
+      "icon": "linkedin",
+      "enabled": true,
+      "order": 4
+    },
+    {
+      "id": "social-github",
+      "platform": "github",
+      "label": "GitHub",
+      "ariaLabel": "Explore Quanta on GitHub",
+      "url": "",
+      "icon": "github",
+      "enabled": true,
+      "order": 5
+    }
+  ],
   "availability": {
     "enabled": false,
     "message": "We have 2 project slots open for Q1 2027.",
@@ -40,7 +92,7 @@
     }
   ],
   "features": {
-    "partners": true,
+    "partners": false,
     "clients": true,
     "clientsOnHome": true,
     "portal": true

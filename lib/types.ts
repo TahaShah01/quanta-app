@@ -10,6 +10,17 @@ export interface SocialLinks {
   linkedin?: string;
 }
 
+export interface ManagedSocialLink {
+  id: string;
+  platform: string;
+  label: string;
+  ariaLabel?: string;
+  url: string;
+  icon: string;
+  enabled: boolean;
+  order: number;
+}
+
 export interface TeamMember {
   id: string;
   num: string;
@@ -179,6 +190,8 @@ export interface SiteSettings {
   location: string;
   phone: string;
   socials: SocialLinks;
+  /** Modern dynamic social links with ordering, safe icons, and enable/disable states */
+  socialLinks?: ManagedSocialLink[];
   availability: AvailabilityConfig;
   analytics: AnalyticsConfig;
   contact_api_endpoint: string;

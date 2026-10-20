@@ -14,6 +14,7 @@ import {
   ArrowRight,
   Sparkles,
   SlidersHorizontal,
+  X,
 } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import type { PublicReview } from "@/lib/reviews";
@@ -390,7 +391,7 @@ export function ReviewsView({ initialReviews, stats }: ReviewsViewProps) {
                 className="absolute right-6 top-6 rounded-full p-1.5 text-[var(--muted)] hover:text-[var(--foreground)] transition-colors"
                 aria-label="Close modal"
               >
-                ✕
+                <X size={18} />
               </button>
 
               {/* STATE 1: Anonymous / Unauthenticated */}

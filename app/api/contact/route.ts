@@ -1,11 +1,31 @@
 import { NextResponse } from "next/server";
 import { createContact, createLead, createTask, logActivity, listContacts } from "@/lib/crm";
+import { createMessage, listMessages, getMessageStats, type MessageStatus, type MessageSource } from "@/lib/messages";
+import { requireAdmin } from "@/lib/api-auth";
 
 function parseBudget(budgetStr?: string): number {
   if (!budgetStr) return 15000;
   const digits = budgetStr.replace(/[^0-9]/g, "");
   const num = parseInt(digits, 10);
   return isNaN(num) || num <= 0 ? 15000 : num;
+}
+
+export async function GET(request: Request) {
+  const unauth = await requireAdmin();
+  if (unauth) return unauth;
+
+  const { searchParams } = new URL(request.url);
+  const statusParam = searchParams.get("status");
+  const sourceParam = searchParams.get("source");
+  const search = searchParams.get("search") || undefined;
+
+  const status = (statusParam || "all") as MessageStatus | "all";
+  const source = (sourceParam || "all") as MessageSource | "all";
+
+  const messages = listMessages({ status, source, search });
+  const stats = getMessageStats();
+
+  return NextResponse.json({ messages, stats });
 }
 
 export async function POST(request: Request) {
@@ -34,7 +54,18 @@ export async function POST(request: Request) {
       );
     }
 
-    // Check if contact already exists in CRM
+    // 1. Store in dedicated contact messages portal collection
+    const storedMessage = createMessage({
+      name,
+      email,
+      company: company || undefined,
+      budget: budget || undefined,
+      subject: `${company || name} — Project Inquiry`,
+      message,
+      source: "website_contact",
+    });
+
+    // 2. Check if contact already exists in CRM
     const existing = listContacts().find(
       (c) => c.email.toLowerCase() === email.toLowerCase()
     );
@@ -59,7 +90,7 @@ export async function POST(request: Request) {
       contactId = newContact.id;
     }
 
-    // Create a new lead in CRM pipeline
+    // 3. Create a new lead in CRM pipeline
     const lead = createLead({
       title: `${company || name} — Inbound Project Inquiry`,
       contactId,
@@ -74,7 +105,7 @@ export async function POST(request: Request) {
       notes: message,
     });
 
-    // Create follow-up task for team
+    // 4. Create follow-up task for team
     createTask({
       title: `Respond to website inquiry: ${name} (${company || "Inbound"})`,
       description: `Inquiry details:\nEmail: ${email}\nBudget: ${budget || "Unspecified"}\nMessage:\n${message}`,
@@ -87,7 +118,7 @@ export async function POST(request: Request) {
       dueDate: new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString(),
     });
 
-    // Log activity
+    // 5. Log activity
     logActivity({
       type: "inquiry",
       title: "Website Contact Form Submitted",
@@ -101,6 +132,7 @@ export async function POST(request: Request) {
     return NextResponse.json(
       {
         success: true,
+        messageId: storedMessage.id,
         message: "Thank you for reaching out. The Quanta team will review your inquiry and respond within one business day.",
       },
       { status: 200 }

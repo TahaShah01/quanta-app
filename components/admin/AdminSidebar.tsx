@@ -5,7 +5,7 @@ import {
   LayoutDashboard, Users, FolderOpen, MessageSquareQuote,
   Wrench, HelpCircle, BookOpen, History, Settings, ArrowLeft,
   ChevronRight, Handshake, Building2, KeyRound, FileText, LogOut,
-  Star, Briefcase,
+  Star, Briefcase, Mail,
 } from "lucide-react";
 
 const groups = [
@@ -26,6 +26,7 @@ const groups = [
   {
     heading: "People & Sales",
     items: [
+      { label: "Messages & Inquiries", href: "/admin/contact", icon: Mail },
       { label: "Team CRM", href: "/admin/crm", icon: Briefcase },
       { label: "Team members", href: "/admin/team", icon: Users },
       { label: "Partners", href: "/admin/partners", icon: Handshake },

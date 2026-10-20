@@ -1,14 +1,26 @@
 [
   {
-    "published": true,
-    "name": "hgf",
+    "id": "partner-vercel",
+    "name": "Vercel",
     "kind": "company",
-    "role": "hgf",
-    "description": "hgf",
-    "logo": "fgh",
-    "website": "fdgh",
-    "since": "2026",
-    "id": "partner-1792495183722",
+    "role": "Cloud & Edge Infrastructure",
+    "description": "Production hosting, edge computing, and continuous integration pipeline deployment.",
+    "logo": "",
+    "website": "https://vercel.com",
+    "since": "2025",
+    "published": true,
     "order": 1
+  },
+  {
+    "id": "partner-figma",
+    "name": "Figma",
+    "kind": "company",
+    "role": "Design Systems Partner",
+    "description": "Collaborative design tooling, design token architecture, and cross-team prototyping.",
+    "logo": "",
+    "website": "https://figma.com",
+    "since": "2025",
+    "published": true,
+    "order": 2
   }
 ]

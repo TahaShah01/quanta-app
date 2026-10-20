@@ -1,6 +1,26 @@
 {
   "contacts": [
     {
+      "name": "Taha Shah",
+      "email": "don.tahashah@gmail.com",
+      "phone": "",
+      "organizationName": "dgfrs",
+      "jobTitle": "Prospective Client",
+      "source": "Website Inquiry",
+      "status": "Lead",
+      "owner": "Taha Shah",
+      "tags": [
+        "Website Lead",
+        "Corporate"
+      ],
+      "notes": "Initial message: sdgrd\nBudget indicated: $15K – $50K",
+      "lastContactDate": "2026-10-20T16:25:10.209Z",
+      "nextFollowUp": "2026-10-21T16:25:10.209Z",
+      "id": "contact-1792513510209",
+      "createdAt": "2026-10-20T16:25:10.209Z",
+      "updatedAt": "2026-10-20T16:25:10.209Z"
+    },
+    {
       "id": "contact-1",
       "name": "Sarah Mitchell",
       "email": "sarah@veritaslabs.com",
@@ -141,6 +161,38 @@
   ],
   "leads": [
     {
+      "title": "gfh — Inbound Project Inquiry",
+      "contactId": "contact-1792513510209",
+      "contactName": "Taha Shah",
+      "organizationName": "gfh",
+      "stage": "new",
+      "value": 515,
+      "probability": 25,
+      "source": "Website Form",
+      "owner": "Taha Shah",
+      "expectedCloseDate": "2026-11-19",
+      "notes": "drfhgdgvcx",
+      "id": "lead-1792515022720",
+      "createdAt": "2026-10-20T16:50:22.720Z",
+      "updatedAt": "2026-10-20T16:50:22.720Z"
+    },
+    {
+      "title": "dgfrs — Inbound Project Inquiry",
+      "contactId": "contact-1792513510209",
+      "contactName": "Taha Shah",
+      "organizationName": "dgfrs",
+      "stage": "new",
+      "value": 1550,
+      "probability": 25,
+      "source": "Website Form",
+      "owner": "Taha Shah",
+      "expectedCloseDate": "2026-11-19",
+      "notes": "sdgrd",
+      "id": "lead-1792513510212",
+      "createdAt": "2026-10-20T16:25:10.212Z",
+      "updatedAt": "2026-10-20T16:25:10.212Z"
+    },
+    {
       "title": "dsf",
       "contactName": "sdf",
       "organizationName": "fasd",
@@ -221,6 +273,32 @@
   ],
   "tasks": [
     {
+      "title": "Respond to website inquiry: Taha Shah (gfh)",
+      "description": "Inquiry details:\nEmail: don.tahashah@gmail.com\nBudget: $5K – $15K\nMessage:\ndrfhgdgvcx",
+      "assignee": "Taha Shah",
+      "relatedType": "lead",
+      "relatedId": "lead-1792515022720",
+      "relatedName": "gfh — Inbound Project Inquiry",
+      "priority": "high",
+      "status": "pending",
+      "dueDate": "2026-10-21T16:50:22.721Z",
+      "id": "task-1792515022722",
+      "createdAt": "2026-10-20T16:50:22.722Z"
+    },
+    {
+      "title": "Respond to website inquiry: Taha Shah (dgfrs)",
+      "description": "Inquiry details:\nEmail: don.tahashah@gmail.com\nBudget: $15K – $50K\nMessage:\nsdgrd",
+      "assignee": "Taha Shah",
+      "relatedType": "lead",
+      "relatedId": "lead-1792513510212",
+      "relatedName": "dgfrs — Inbound Project Inquiry",
+      "priority": "high",
+      "status": "pending",
+      "dueDate": "2026-10-21T16:25:10.213Z",
+      "id": "task-1792513510214",
+      "createdAt": "2026-10-20T16:25:10.214Z"
+    },
+    {
       "id": "task-1",
       "title": "Send updated scope revision to Elena Rostova",
       "description": "Include milestones for mobile responsive testing and design handover.",
@@ -275,6 +353,28 @@
     }
   ],
   "activities": [
+    {
+      "type": "inquiry",
+      "title": "Website Contact Form Submitted",
+      "description": "Inquiry received from Taha Shah (don.tahashah@gmail.com). Budget: $5K – $15K. Snippet: \"drfhgdgvcx...\"",
+      "relatedType": "lead",
+      "relatedId": "lead-1792515022720",
+      "relatedName": "gfh — Inbound Project Inquiry",
+      "author": "System (Website Form)",
+      "id": "act-1792515022724",
+      "timestamp": "2026-10-20T16:50:22.724Z"
+    },
+    {
+      "type": "inquiry",
+      "title": "Website Contact Form Submitted",
+      "description": "Inquiry received from Taha Shah (don.tahashah@gmail.com). Budget: $15K – $50K. Snippet: \"sdgrd...\"",
+      "relatedType": "lead",
+      "relatedId": "lead-1792513510212",
+      "relatedName": "dgfrs — Inbound Project Inquiry",
+      "author": "System (Website Form)",
+      "id": "act-1792513510216",
+      "timestamp": "2026-10-20T16:25:10.216Z"
+    },
     {
       "id": "act-1792503296059",
       "type": "stage_change",
@@ -415,6 +515,51 @@
     }
   ],
   "auditLog": [
+    {
+      "id": "audit-1792515022722-cdzv",
+      "action": "CREATE",
+      "entityType": "Task",
+      "entityId": "task-1792515022722",
+      "performedBy": "Admin",
+      "details": "Created task \"Respond to website inquiry: Taha Shah (gfh)\"",
+      "timestamp": "2026-10-20T16:50:22.722Z"
+    },
+    {
+      "id": "audit-1792515022720-8dmm",
+      "action": "CREATE",
+      "entityType": "Lead",
+      "entityId": "lead-1792515022720",
+      "performedBy": "Admin",
+      "details": "Created lead gfh — Inbound Project Inquiry ($515)",
+      "timestamp": "2026-10-20T16:50:22.720Z"
+    },
+    {
+      "id": "audit-1792513510214-2l8e",
+      "action": "CREATE",
+      "entityType": "Task",
+      "entityId": "task-1792513510214",
+      "performedBy": "Admin",
+      "details": "Created task \"Respond to website inquiry: Taha Shah (dgfrs)\"",
+      "timestamp": "2026-10-20T16:25:10.214Z"
+    },
+    {
+      "id": "audit-1792513510212-osog",
+      "action": "CREATE",
+      "entityType": "Lead",
+      "entityId": "lead-1792513510212",
+      "performedBy": "Admin",
+      "details": "Created lead dgfrs — Inbound Project Inquiry ($1550)",
+      "timestamp": "2026-10-20T16:25:10.212Z"
+    },
+    {
+      "id": "audit-1792513510209-p3pd",
+      "action": "CREATE",
+      "entityType": "Contact",
+      "entityId": "contact-1792513510209",
+      "performedBy": "Admin",
+      "details": "Created contact Taha Shah",
+      "timestamp": "2026-10-20T16:25:10.209Z"
+    },
     {
       "id": "audit-1792503296059-tk0q",
       "action": "UPDATE",

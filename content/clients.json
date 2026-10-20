@@ -1,11 +1,47 @@
 [
   {
+    "id": "client-veritas",
+    "name": "Veritas Labs",
+    "logo": "",
+    "website": "https://veritaslabs.example.com",
+    "note": "Web Platform & Infrastructure",
     "published": true,
-    "name": "retgs",
-    "logo": "gserzc",
-    "website": "raszedvb",
-    "note": "gzevdgegty",
-    "id": "client-1792495309036",
     "order": 1
+  },
+  {
+    "id": "client-meridian",
+    "name": "Meridian AI",
+    "logo": "",
+    "website": "https://meridianai.example.com",
+    "note": "AI Product & Web Platform",
+    "published": true,
+    "order": 2
+  },
+  {
+    "id": "client-cascade",
+    "name": "Cascade Commerce",
+    "logo": "",
+    "website": "https://cascadecommerce.example.com",
+    "note": "Conversion Storefront",
+    "published": true,
+    "order": 3
+  },
+  {
+    "id": "client-synapse",
+    "name": "Synapse Flow",
+    "logo": "",
+    "website": "https://synapseflow.example.com",
+    "note": "Design Systems & SaaS",
+    "published": true,
+    "order": 4
+  },
+  {
+    "id": "client-nexus",
+    "name": "Nexus Pay",
+    "logo": "",
+    "website": "https://nexuspay.example.com",
+    "note": "Payment Infrastructure",
+    "published": true,
+    "order": 5
   }
 ]

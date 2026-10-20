@@ -7,10 +7,12 @@ import { ADMIN_COOKIE, adminMode, readSession } from "@/lib/auth";
 
 const PUBLIC_API_POSTS = new Set([
   "/api/contact",
+  "/api/messages",
   "/api/admin/login",
   "/api/admin/logout",
   "/api/portal/login",
   "/api/portal/logout",
+  "/api/reviews",
 ]);
 
 export function proxy(request: NextRequest) {
@@ -33,7 +35,9 @@ export function proxy(request: NextRequest) {
     (request.method === "GET" || request.method === "HEAD") &&
     searchParams.get("published") !== "false" &&
     !pathname.startsWith("/api/portal-accounts") &&
-    !pathname.startsWith("/api/content");
+    !pathname.startsWith("/api/content") &&
+    !pathname.startsWith("/api/contact") &&
+    !pathname.startsWith("/api/messages");
   if (publicRead) return NextResponse.next();
 
   if (mode === "open") return NextResponse.next();

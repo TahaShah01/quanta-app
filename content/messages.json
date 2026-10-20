@@ -1,0 +1,57 @@
+[
+  {
+    "id": "msg-1792515022717-zikk0",
+    "name": "Taha Shah",
+    "email": "don.tahashah@gmail.com",
+    "company": "gfh",
+    "budget": "$5K – $15K",
+    "subject": "gfh — Project Inquiry",
+    "message": "drfhgdgvcx",
+    "source": "website_contact",
+    "status": "read",
+    "createdAt": "2026-10-20T16:50:22.717Z",
+    "readAt": "2026-10-20T16:51:26.702Z"
+  },
+  {
+    "id": "msg-1774892019482-a89f2",
+    "name": "Sarah Mitchell",
+    "email": "sarah@veritaslabs.com",
+    "company": "Veritas Labs",
+    "budget": "$50,000+",
+    "subject": "Enterprise Web Platform & Design System Expansion",
+    "message": "Hi Quanta team, we loved the outcome of Project Alpha and are looking to scale our digital ecosystem with a dedicated enterprise design system and multi-region micro-frontends. Would love to schedule a technical alignment call for next Tuesday.",
+    "source": "website_contact",
+    "status": "unread",
+    "createdAt": "2026-03-28T14:32:00.000Z"
+  },
+  {
+    "id": "msg-1774781920192-b43x1",
+    "name": "James Okafor",
+    "email": "james@meridianai.io",
+    "company": "Meridian AI",
+    "budget": "$25,000 - $50,000",
+    "subject": "3D Canvas Rendering & WebGL Optimization",
+    "message": "We are preparing for our Series A announcement and need our interactive 3D platform optimized for lower-end mobile devices and tablet viewports. Looking forward to discussing the scope and deliverables.",
+    "source": "website_contact",
+    "status": "replied",
+    "createdAt": "2026-03-24T09:15:00.000Z",
+    "readAt": "2026-03-24T10:00:00.000Z",
+    "repliedAt": "2026-03-24T11:45:00.000Z",
+    "replySubject": "Re: 3D Canvas Rendering & WebGL Optimization — Quanta Studio",
+    "replyBody": "Hi James,\n\nThanks for reaching out! We'd be glad to review the WebGL shaders and mobile optimization pipeline for Meridian AI.\n\nLet's schedule a 30-minute technical session this Thursday.\n\nBest,\nQuanta Studio Team",
+    "replySentBy": "Taha Shah"
+  },
+  {
+    "id": "msg-1774659102911-c99z8",
+    "name": "Elena Rostova",
+    "email": "elena@synapseflow.com",
+    "company": "Synapse Flow",
+    "budget": "$10,000 - $25,000",
+    "subject": "Q3 Analytics Dashboard Integration",
+    "message": "Inquiry regarding custom interactive data visualization components for our cloud workflow orchestrator. We have Figma specifications ready for review.",
+    "source": "website_contact",
+    "status": "read",
+    "createdAt": "2026-03-20T16:40:00.000Z",
+    "readAt": "2026-03-21T08:20:00.000Z"
+  }
+]

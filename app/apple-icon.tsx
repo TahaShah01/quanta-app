@@ -23,6 +23,7 @@ export default function AppleIcon() {
           background: "#03101A",
         }}
       >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={src} width={156} height={156} alt="" />
       </div>
     ),
