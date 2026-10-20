@@ -12,6 +12,8 @@ import {
   Trash2,
   FileText,
   Activity as ActivityIcon,
+  Layers,
+  ShieldCheck,
 } from "lucide-react";
 import type {
   Contact,
@@ -24,6 +26,10 @@ import type {
   AuditLogEntry,
   TaskPriority,
 } from "@/lib/crm";
+import type {
+  PublicAccount,
+  ProjectStatus,
+} from "@/lib/portal";
 
 interface CRMMetrics {
   totalContacts: number;
@@ -51,7 +57,7 @@ const STAGES: { id: PipelineStage; label: string; color: string }[] = [
 ];
 
 export default function AdminCRMPage() {
-  const [activeTab, setActiveTab] = useState<"pipeline" | "contacts" | "tasks" | "proposals" | "activity">("pipeline");
+  const [activeTab, setActiveTab] = useState<"pipeline" | "contacts" | "tasks" | "proposals" | "projects" | "activity">("pipeline");
   const [metrics, setMetrics] = useState<CRMMetrics | null>(null);
   const [contacts, setContacts] = useState<Contact[]>([]);
   const [organizations, setOrganizations] = useState<Organization[]>([]);
@@ -59,7 +65,19 @@ export default function AdminCRMPage() {
   const [tasks, setTasks] = useState<CRMTask[]>([]);
   const [activities, setActivities] = useState<CRMActivity[]>([]);
   const [proposals, setProposals] = useState<Proposal[]>([]);
+  const [accounts, setAccounts] = useState<PublicAccount[]>([]);
   const [loading, setLoading] = useState(true);
+
+  // Deliverable modal in CRM
+  const [newDeliverableModal, setNewDeliverableModal] = useState<{ open: boolean; accountId?: string }>({ open: false });
+  const [delivForm, setDelivForm] = useState({ title: "", version: "1.0", url: "", description: "" });
+
+  // Milestone inline modal in CRM
+  const [newMilestoneModal, setNewMilestoneModal] = useState<{ open: boolean; accountId?: string }>({ open: false });
+  const [milestoneForm, setMilestoneForm] = useState({ title: "", due: "", note: "" });
+
+  // Inquiry response state
+  const [inquiryResponses, setInquiryResponses] = useState<Record<string, string>>({});
 
   // Search & Filter
   const [searchQuery, setSearchQuery] = useState("");
@@ -136,11 +154,123 @@ export default function AdminCRMPage() {
         setTasks(data.tasks || []);
         setActivities(data.activities || []);
         setProposals(data.proposals || []);
+        setAccounts(data.accounts || []);
       }
     } catch (e) {
       console.error("Failed to load CRM data:", e);
     } finally {
       setLoading(false);
+    }
+  }
+
+  // Convert Won Lead to Delivery Project
+  async function handleConvertLead(leadId: string) {
+    try {
+      const res = await fetch("/api/crm", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ entity: "convert_lead", data: { leadId } }),
+      });
+      if (res.ok) {
+        await fetchCRM();
+        setActiveTab("projects");
+      }
+    } catch (err) {
+      console.error("Convert lead error:", err);
+    }
+  }
+
+  // Update Project Status & Progress
+  async function handleUpdateProject(accountId: string, patch: Partial<PublicAccount["project"]>) {
+    try {
+      const res = await fetch("/api/crm", {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ entity: "project", id: accountId, data: patch }),
+      });
+      if (res.ok) fetchCRM();
+    } catch (err) {
+      console.error("Update project error:", err);
+    }
+  }
+
+  // Add Deliverable to Project
+  async function handleCreateDeliverable(e: React.FormEvent) {
+    e.preventDefault();
+    if (!newDeliverableModal.accountId) return;
+    try {
+      const res = await fetch("/api/crm", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          entity: "project_deliverable",
+          data: {
+            accountId: newDeliverableModal.accountId,
+            deliverable: delivForm,
+          },
+        }),
+      });
+      if (res.ok) {
+        setNewDeliverableModal({ open: false });
+        setDelivForm({ title: "", version: "1.0", url: "", description: "" });
+        fetchCRM();
+      }
+    } catch (err) {
+      console.error("Create deliverable error:", err);
+    }
+  }
+
+  // Add Milestone to Project
+  async function handleCreateMilestone(e: React.FormEvent) {
+    e.preventDefault();
+    if (!newMilestoneModal.accountId) return;
+    try {
+      const res = await fetch("/api/crm", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          entity: "project_milestone",
+          data: {
+            accountId: newMilestoneModal.accountId,
+            milestone: {
+              title: milestoneForm.title,
+              due: milestoneForm.due,
+              note: milestoneForm.note,
+              status: "todo",
+            },
+          },
+        }),
+      });
+      if (res.ok) {
+        setNewMilestoneModal({ open: false });
+        setMilestoneForm({ title: "", due: "", note: "" });
+        fetchCRM();
+      }
+    } catch (err) {
+      console.error("Create milestone error:", err);
+    }
+  }
+
+  // Respond to Client Inquiry
+  async function handleReplyInquiry(accountId: string, inquiryId: string) {
+    const text = inquiryResponses[inquiryId];
+    if (!text?.trim()) return;
+    try {
+      const res = await fetch("/api/crm", {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          entity: "inquiry_response",
+          id: accountId,
+          data: { inquiryId, responseText: text.trim() },
+        }),
+      });
+      if (res.ok) {
+        setInquiryResponses((prev) => ({ ...prev, [inquiryId]: "" }));
+        fetchCRM();
+      }
+    } catch (err) {
+      console.error("Reply inquiry error:", err);
     }
   }
 
@@ -454,6 +584,7 @@ export default function AdminCRMPage() {
             ["contacts", "Contacts & Organizations", Users],
             ["tasks", "Tasks & Follow-ups", CheckSquare],
             ["proposals", "Proposals", FileText],
+            ["projects", "Projects & Delivery", Layers],
             ["activity", "Audit Log & Feed", ActivityIcon],
           ] as const
         ).map(([key, label, Icon]) => (
@@ -582,7 +713,7 @@ export default function AdminCRMPage() {
                               </div>
 
                               {/* Stage transition selector */}
-                              <div style={{ marginTop: 2 }}>
+                              <div style={{ marginTop: 2, display: "flex", flexDirection: "column", gap: 6 }}>
                                 <select
                                   value={lead.stage}
                                   onChange={(e) => handleStageChange(lead.id, e.target.value as PipelineStage)}
@@ -595,6 +726,25 @@ export default function AdminCRMPage() {
                                     </option>
                                   ))}
                                 </select>
+
+                                {lead.stage === "won" && (
+                                  <button
+                                    type="button"
+                                    onClick={() => handleConvertLead(lead.id)}
+                                    className="admin-btn admin-btn-primary"
+                                    style={{
+                                      fontSize: 10,
+                                      padding: "4px 8px",
+                                      width: "100%",
+                                      justifyContent: "center",
+                                      background: "#10b981",
+                                      borderColor: "#059669",
+                                      color: "#ffffff",
+                                    }}
+                                  >
+                                    Convert to Delivery Project &rarr;
+                                  </button>
+                                )}
                               </div>
                             </div>
                           ))
@@ -987,7 +1137,391 @@ export default function AdminCRMPage() {
               </div>
             </div>
           )}
+
+          {/* TAB 5: PROJECTS & DELIVERY (SHARED WITH CLIENT PORTAL) */}
+          {activeTab === "projects" && (
+            <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                <div>
+                  <h3 style={{ fontSize: 16, fontWeight: 600, color: "var(--admin-text)" }}>
+                    Active Client Delivery Projects
+                  </h3>
+                  <p style={{ fontSize: 12, color: "var(--admin-text-secondary)", marginTop: 2 }}>
+                    Authoritative project workspace synchronized in real-time with each client&apos;s portal. Status changes to &quot;completed&quot; unlock verified client reviews.
+                  </p>
+                </div>
+                <span className="admin-badge admin-badge-green" style={{ fontSize: 11 }}>
+                  {accounts.length} Client Accounts on File
+                </span>
+              </div>
+
+              {accounts.length === 0 ? (
+                <div className="admin-card" style={{ padding: 48, textAlign: "center", color: "var(--admin-text-muted)" }}>
+                  No delivery accounts found. Convert a won lead from the Sales Pipeline tab to initialize a client project.
+                </div>
+              ) : (
+                <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
+                  {accounts.map((acc) => {
+                    const p = acc.project;
+                    const isCompleted = p.status === "completed" || p.status === "launched";
+                    const deliverables = p.deliverables || [];
+                    const milestones = p.milestones || [];
+                    const inquiries = p.inquiries || [];
+
+                    return (
+                      <div key={acc.id} className="admin-card" style={{ padding: 24 }}>
+                        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: 16, borderBottom: "1px solid var(--admin-border)", paddingBottom: 16 }}>
+                          <div>
+                            <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                              <strong style={{ fontSize: 16, color: "var(--admin-text)" }}>{p.name || "Untitled Engagement"}</strong>
+                              {isCompleted && (
+                                <span className="admin-badge admin-badge-green" style={{ display: "flex", alignItems: "center", gap: 4 }}>
+                                  <ShieldCheck size={11} /> Review Unlocked
+                                </span>
+                              )}
+                            </div>
+                            <div style={{ fontSize: 12, color: "var(--admin-text-secondary)", marginTop: 4 }}>
+                              Client: <strong>{acc.company || acc.name}</strong> ({acc.email}) · Started: {p.startDate || "N/A"}
+                            </div>
+                          </div>
+
+                          <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+                            {/* Project Lifecycle Status Dropdown */}
+                            <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+                              <span style={{ fontSize: 11, color: "var(--admin-text-muted)", textTransform: "uppercase" }}>
+                                Lifecycle:
+                              </span>
+                              <select
+                                className="admin-input"
+                                value={p.status}
+                                onChange={(e) => handleUpdateProject(acc.id, { status: e.target.value as ProjectStatus })}
+                                style={{
+                                  fontSize: 12,
+                                  fontWeight: 600,
+                                  color: isCompleted ? "#10b981" : "var(--admin-text)",
+                                  padding: "4px 8px",
+                                }}
+                              >
+                                <option value="planning">Planning</option>
+                                <option value="design">Design</option>
+                                <option value="development">Development</option>
+                                <option value="testing">Testing</option>
+                                <option value="launched">Launched</option>
+                                <option value="completed">Completed (Unlocks Review)</option>
+                                <option value="on-hold">On Hold</option>
+                              </select>
+                            </div>
+
+                            {/* Progress percentage */}
+                            <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+                              <span style={{ fontSize: 11, color: "var(--admin-text-muted)" }}>Progress:</span>
+                              <input
+                                type="number"
+                                min={0}
+                                max={100}
+                                className="admin-input"
+                                style={{ width: 64, fontSize: 12, textAlign: "center" }}
+                                value={p.progress || 0}
+                                onChange={(e) => handleUpdateProject(acc.id, { progress: Math.max(0, Math.min(100, Number(e.target.value))) })}
+                              />
+                              <span style={{ fontSize: 12, color: "var(--admin-text-muted)" }}>%</span>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Milestones & Deliverables Subsections */}
+                        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: 20, marginTop: 18 }}>
+                          {/* Milestones Column */}
+                          <div style={{ background: "var(--admin-surface-2)", borderRadius: "var(--admin-radius-sm)", padding: 16 }}>
+                            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 12 }}>
+                              <strong style={{ fontSize: 13, color: "var(--admin-text)" }}>
+                                Milestones ({milestones.filter((m) => m.status === "done").length}/{milestones.length})
+                              </strong>
+                              <button
+                                type="button"
+                                className="admin-btn admin-btn-ghost"
+                                style={{ fontSize: 11, padding: "2px 8px" }}
+                                onClick={() => setNewMilestoneModal({ open: true, accountId: acc.id })}
+                              >
+                                <Plus size={12} /> Add Milestone
+                              </button>
+                            </div>
+
+                            <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+                              {milestones.length === 0 ? (
+                                <span style={{ fontSize: 11, color: "var(--admin-text-muted)" }}>No milestones set</span>
+                              ) : (
+                                milestones.map((m, idx) => (
+                                  <div
+                                    key={m.id || idx}
+                                    style={{
+                                      display: "flex",
+                                      alignItems: "center",
+                                      justifyContent: "space-between",
+                                      padding: "6px 10px",
+                                      background: "var(--admin-surface)",
+                                      borderRadius: 4,
+                                      fontSize: 12,
+                                    }}
+                                  >
+                                    <span style={{ color: "var(--admin-text)", fontWeight: 500 }}>{m.title}</span>
+                                    <button
+                                      type="button"
+                                      className={`admin-badge ${m.status === "done" ? "admin-badge-green" : m.status === "active" ? "admin-badge-yellow" : "admin-badge-gray"}`}
+                                      style={{ cursor: "pointer", border: "none" }}
+                                      onClick={() => {
+                                        const nextStatus = m.status === "done" ? "todo" : m.status === "active" ? "done" : "active";
+                                        const updatedMilestones = [...milestones];
+                                        updatedMilestones[idx] = { ...m, status: nextStatus };
+                                        handleUpdateProject(acc.id, { milestones: updatedMilestones });
+                                      }}
+                                    >
+                                      {m.status.toUpperCase()}
+                                    </button>
+                                  </div>
+                                ))
+                              )}
+                            </div>
+                          </div>
+
+                          {/* Deliverables Column */}
+                          <div style={{ background: "var(--admin-surface-2)", borderRadius: "var(--admin-radius-sm)", padding: 16 }}>
+                            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 12 }}>
+                              <strong style={{ fontSize: 13, color: "var(--admin-text)" }}>
+                                Deliverables & Artifacts ({deliverables.length})
+                              </strong>
+                              <button
+                                type="button"
+                                className="admin-btn admin-btn-ghost"
+                                style={{ fontSize: 11, padding: "2px 8px" }}
+                                onClick={() => setNewDeliverableModal({ open: true, accountId: acc.id })}
+                              >
+                                <Plus size={12} /> Add Deliverable
+                              </button>
+                            </div>
+
+                            <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+                              {deliverables.length === 0 ? (
+                                <span style={{ fontSize: 11, color: "var(--admin-text-muted)" }}>No deliverables shared</span>
+                              ) : (
+                                deliverables.map((d) => (
+                                  <div
+                                    key={d.id}
+                                    style={{
+                                      padding: "8px 10px",
+                                      background: "var(--admin-surface)",
+                                      borderRadius: 4,
+                                      fontSize: 12,
+                                    }}
+                                  >
+                                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
+                                      <strong style={{ color: "var(--admin-text)" }}>{d.title} (v{d.version || "1.0"})</strong>
+                                      <span
+                                        className={`admin-badge ${
+                                          d.status === "approved"
+                                            ? "admin-badge-green"
+                                            : d.status === "revision_requested"
+                                              ? "admin-badge-red"
+                                              : "admin-badge-yellow"
+                                        }`}
+                                        style={{ fontSize: 10 }}
+                                      >
+                                        {d.status === "approved"
+                                          ? "Approved by Client"
+                                          : d.status === "revision_requested"
+                                            ? "Revision Requested"
+                                            : "Pending Approval"}
+                                      </span>
+                                    </div>
+                                    {d.feedback && (
+                                      <div style={{ marginTop: 4, fontSize: 11, color: "#f59e0b", background: "rgba(245, 158, 11, 0.1)", padding: "4px 8px", borderRadius: 4 }}>
+                                        <strong>Client Feedback:</strong> &ldquo;{d.feedback}&rdquo;
+                                      </div>
+                                    )}
+                                  </div>
+                                ))
+                              )}
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Client Inquiries in CRM */}
+                        {inquiries.length > 0 && (
+                          <div style={{ marginTop: 18, borderTop: "1px solid var(--admin-border)", paddingTop: 14 }}>
+                            <strong style={{ fontSize: 13, color: "var(--admin-text)", display: "block", marginBottom: 8 }}>
+                              Client Inquiries & Support Requests ({inquiries.filter((i) => i.status !== "resolved").length} Open)
+                            </strong>
+                            <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+                              {inquiries.map((inq) => (
+                                <div key={inq.id} style={{ background: "var(--admin-surface-2)", padding: 12, borderRadius: 6 }}>
+                                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
+                                    <strong style={{ fontSize: 12, color: "var(--admin-text)" }}>{inq.subject}</strong>
+                                    <span className={`admin-badge ${inq.status === "resolved" ? "admin-badge-green" : "admin-badge-yellow"}`} style={{ fontSize: 9 }}>
+                                      {inq.status.toUpperCase()}
+                                    </span>
+                                  </div>
+                                  <p style={{ fontSize: 11, color: "var(--admin-text-secondary)", marginTop: 4 }}>{inq.message}</p>
+                                  {inq.response ? (
+                                    <div style={{ marginTop: 6, fontSize: 11, color: "#10b981" }}>
+                                      <strong>Quanta Response:</strong> {inq.response}
+                                    </div>
+                                  ) : (
+                                    <div style={{ display: "flex", gap: 8, marginTop: 8 }}>
+                                      <input
+                                        type="text"
+                                        placeholder="Type reply to client..."
+                                        className="admin-input"
+                                        style={{ fontSize: 11, height: 28 }}
+                                        value={inquiryResponses[inq.id] || ""}
+                                        onChange={(e) => setInquiryResponses({ ...inquiryResponses, [inq.id]: e.target.value })}
+                                      />
+                                      <button
+                                        type="button"
+                                        className="admin-btn admin-btn-primary"
+                                        style={{ fontSize: 11, padding: "2px 10px" }}
+                                        onClick={() => handleReplyInquiry(acc.id, inq.id)}
+                                      >
+                                        Reply & Resolve
+                                      </button>
+                                    </div>
+                                  )}
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
+          )}
         </>
+      )}
+
+      {/* NEW DELIVERABLE MODAL */}
+      {newDeliverableModal.open && (
+        <div className="admin-modal-overlay" onClick={() => setNewDeliverableModal({ open: false })}>
+          <div className="admin-modal" onClick={(e) => e.stopPropagation()}>
+            <div className="admin-modal-header">
+              <h2 className="admin-modal-title">Publish Project Deliverable</h2>
+              <button className="admin-btn admin-btn-ghost admin-btn-icon" onClick={() => setNewDeliverableModal({ open: false })}>
+                <X size={15} />
+              </button>
+            </div>
+            <form onSubmit={handleCreateDeliverable}>
+              <div className="admin-modal-body">
+                <div className="admin-form">
+                  <div className="admin-form-group">
+                    <label className="admin-label">Deliverable Title *</label>
+                    <input
+                      className="admin-input"
+                      required
+                      value={delivForm.title}
+                      onChange={(e) => setDelivForm({ ...delivForm, title: e.target.value })}
+                      placeholder="e.g. Interactive Prototype & Design Token System"
+                    />
+                  </div>
+                  <div className="admin-form-row">
+                    <div className="admin-form-group">
+                      <label className="admin-label">Version</label>
+                      <input
+                        className="admin-input"
+                        value={delivForm.version}
+                        onChange={(e) => setDelivForm({ ...delivForm, version: e.target.value })}
+                        placeholder="1.0"
+                      />
+                    </div>
+                    <div className="admin-form-group">
+                      <label className="admin-label">Artifact URL</label>
+                      <input
+                        className="admin-input"
+                        value={delivForm.url}
+                        onChange={(e) => setDelivForm({ ...delivForm, url: e.target.value })}
+                        placeholder="https://figma.com/... or staging link"
+                      />
+                    </div>
+                  </div>
+                  <div className="admin-form-group">
+                    <label className="admin-label">Description / Instructions for Client</label>
+                    <textarea
+                      rows={3}
+                      className="admin-textarea"
+                      value={delivForm.description}
+                      onChange={(e) => setDelivForm({ ...delivForm, description: e.target.value })}
+                      placeholder="Review scope, specific items needing feedback..."
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="admin-modal-footer">
+                <button type="button" className="admin-btn admin-btn-ghost" onClick={() => setNewDeliverableModal({ open: false })}>
+                  Cancel
+                </button>
+                <button type="submit" className="admin-btn admin-btn-primary">
+                  Publish to Client Portal
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
+
+      {/* NEW MILESTONE MODAL */}
+      {newMilestoneModal.open && (
+        <div className="admin-modal-overlay" onClick={() => setNewMilestoneModal({ open: false })}>
+          <div className="admin-modal" onClick={(e) => e.stopPropagation()}>
+            <div className="admin-modal-header">
+              <h2 className="admin-modal-title">Add Project Milestone</h2>
+              <button className="admin-btn admin-btn-ghost admin-btn-icon" onClick={() => setNewMilestoneModal({ open: false })}>
+                <X size={15} />
+              </button>
+            </div>
+            <form onSubmit={handleCreateMilestone}>
+              <div className="admin-modal-body">
+                <div className="admin-form">
+                  <div className="admin-form-group">
+                    <label className="admin-label">Milestone Title *</label>
+                    <input
+                      className="admin-input"
+                      required
+                      value={milestoneForm.title}
+                      onChange={(e) => setMilestoneForm({ ...milestoneForm, title: e.target.value })}
+                      placeholder="e.g. Final Design System Delivery"
+                    />
+                  </div>
+                  <div className="admin-form-group">
+                    <label className="admin-label">Target Due Date</label>
+                    <input
+                      type="date"
+                      className="admin-input"
+                      value={milestoneForm.due}
+                      onChange={(e) => setMilestoneForm({ ...milestoneForm, due: e.target.value })}
+                    />
+                  </div>
+                  <div className="admin-form-group">
+                    <label className="admin-label">Note / Scope</label>
+                    <textarea
+                      rows={2}
+                      className="admin-textarea"
+                      value={milestoneForm.note}
+                      onChange={(e) => setMilestoneForm({ ...milestoneForm, note: e.target.value })}
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="admin-modal-footer">
+                <button type="button" className="admin-btn admin-btn-ghost" onClick={() => setNewMilestoneModal({ open: false })}>
+                  Cancel
+                </button>
+                <button type="submit" className="admin-btn admin-btn-primary">
+                  Add Milestone
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
       )}
 
       {/* LEAD MODAL */}

@@ -1,0 +1,47 @@
+{
+  "accounts": [
+    {
+      "id": "client-1792495246272",
+      "name": "Taha Shah",
+      "email": "don.tahashah@gmail.com",
+      "company": "dxz",
+      "passwordHash": "scrypt$YCge6pQFXJi8hmuvrhea8g$78DLaSbkK6KKky3zpxaO26JLQsJfseDnYFf3brX5I5FbRp34m5C5Ag4SjsGCZ46ECjaMeAygvuQTvn82JTdVOw",
+      "active": true,
+      "createdAt": "2026-10-20T11:20:46.316Z",
+      "lastLoginAt": "2026-10-20T14:27:06.637Z",
+      "project": {
+        "name": "wetd",
+        "summary": "4uhydx54ru6yud",
+        "status": "development",
+        "progress": 78,
+        "startDate": "2026-10-20",
+        "targetDate": "",
+        "milestones": [
+          {
+            "id": "c9yh3ja",
+            "title": "sregtd",
+            "status": "todo",
+            "due": "",
+            "note": "rfdge"
+          },
+          {
+            "id": "aq1xnt4",
+            "title": "sru564ur6uthufdryhfgvh",
+            "status": "todo",
+            "due": "",
+            "note": "yrdse4duyrgf"
+          }
+        ],
+        "updates": [
+          {
+            "id": "ay9dxzh",
+            "date": "2026-10-20",
+            "title": "gred",
+            "body": "gzbdes"
+          }
+        ],
+        "links": []
+      }
+    }
+  ]
+}

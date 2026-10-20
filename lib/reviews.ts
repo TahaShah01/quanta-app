@@ -28,8 +28,11 @@ export interface Review {
   title: string;
   /** The review body */
   body: string;
-  /** Which portal account submitted this (empty string if anonymous) */
+  /** Which portal account submitted this */
   portalAccountId: string;
+  /** Associated completed engagement/project */
+  projectId?: string;
+  projectName?: string;
   /** Moderation status */
   status: ReviewStatus;
   /** Whether this appears on the homepage testimonials */
@@ -90,9 +93,16 @@ export function findReviewById(id: string): Review | undefined {
   return load().reviews.find((r) => r.id === id);
 }
 
+export function findReviewByPortalAccountId(portalAccountId: string): Review | undefined {
+  if (!portalAccountId) return undefined;
+  return load().reviews.find((r) => r.portalAccountId === portalAccountId);
+}
+
 export function createReview(
   input: Pick<Review, "reviewerName" | "reviewerCompany" | "reviewerRole" | "rating" | "title" | "body"> & {
-    portalAccountId?: string;
+    portalAccountId: string;
+    projectId?: string;
+    projectName?: string;
   }
 ): Review {
   const file = load();
@@ -104,7 +114,9 @@ export function createReview(
     rating: Math.max(1, Math.min(5, Math.round(input.rating))),
     title: input.title?.trim() ?? "",
     body: input.body.trim(),
-    portalAccountId: input.portalAccountId ?? "",
+    portalAccountId: input.portalAccountId,
+    projectId: input.projectId ?? "",
+    projectName: input.projectName ?? "",
     status: "pending",
     featured: false,
     submittedAt: new Date().toISOString(),

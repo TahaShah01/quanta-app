@@ -14,6 +14,7 @@ export type ProjectStatus =
   | "development"
   | "testing"
   | "launched"
+  | "completed"
   | "on-hold";
 
 export type MilestoneStatus = "done" | "active" | "todo";
@@ -24,6 +25,34 @@ export interface PortalMilestone {
   status: MilestoneStatus;
   due: string;
   note: string;
+}
+
+export interface PortalDeliverable {
+  id: string;
+  title: string;
+  description: string;
+  url: string;
+  version: string;
+  status: "pending_approval" | "approved" | "revision_requested";
+  feedback?: string;
+  updatedAt: string;
+}
+
+export interface PortalClientTask {
+  id: string;
+  title: string;
+  description: string;
+  due: string;
+  completed: boolean;
+}
+
+export interface PortalInquiry {
+  id: string;
+  subject: string;
+  message: string;
+  status: "open" | "in_progress" | "resolved";
+  createdAt: string;
+  response?: string;
 }
 
 export interface PortalUpdate {
@@ -46,7 +75,11 @@ export interface PortalProject {
   progress: number;
   startDate: string;
   targetDate: string;
+  completedAt?: string;
   milestones: PortalMilestone[];
+  deliverables?: PortalDeliverable[];
+  clientTasks?: PortalClientTask[];
+  inquiries?: PortalInquiry[];
   updates: PortalUpdate[];
   links: PortalLink[];
 }
@@ -98,6 +131,9 @@ export function emptyProject(): PortalProject {
     startDate: new Date().toISOString().slice(0, 10),
     targetDate: "",
     milestones: [],
+    deliverables: [],
+    clientTasks: [],
+    inquiries: [],
     updates: [],
     links: [],
   };

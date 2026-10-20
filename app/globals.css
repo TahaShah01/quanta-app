@@ -344,69 +344,6 @@ html[data-intro="held"] [data-site-header] {
   pointer-events: none;
 }
 
-/* Footer wordmark: outlined letters that fill and lift as the pointer passes */
-.footer-word {
-  container-type: inline-size;
-  display: flex;
-  justify-content: space-between;
-  /* the glyphs sit right on the divider below, like they are standing on it */
-  margin-bottom: -0.02em;
-}
-
-.footer-letter {
-  --p: 0;
-  display: block;
-  /* ~0.72em per capital: this makes the row fill the width for any name length */
-  font-size: calc(100cqw / (var(--n, 6) * 0.74));
-  font-weight: 600;
-  line-height: 0.8;
-  letter-spacing: -0.04em;
-  padding-bottom: 0.04em;
-  color: color-mix(in srgb, var(--foreground) calc(var(--p) * 100%), transparent);
-  -webkit-text-stroke: 1px color-mix(in srgb, var(--foreground) calc(34% + var(--p) * 60%), transparent);
-  transform: translateY(calc(var(--p) * -4%));
-  transition: color 0.35s ease, -webkit-text-stroke-color 0.35s ease, transform 0.45s var(--ease-cinematic);
-}
-
-/* Brand block + N link columns: the brand gets a little more room */
-.footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-@media (min-width: 768px) {
-  .footer-grid { grid-template-columns: 1.6fr repeat(var(--cols, 2), minmax(0, 1fr)); }
-}
-
-.footer-mark {
-  transition: transform 0.8s var(--ease-cinematic);
-}
-
-.footer-brand:hover .footer-mark {
-  transform: rotate(90deg);
-}
-
-/* Touch screens and idle visitors get a slow wave instead of a pointer */
-@media (hover: none) {
-  @keyframes footer-wave {
-    0%, 100% { --p: 0; }
-    50% { --p: 0.9; }
-  }
-  .footer-letter {
-    animation: footer-wave 4.8s ease-in-out infinite;
-    animation-delay: calc(var(--i) * 0.28s);
-  }
-}
-
-@property --p {
-  syntax: "<number>";
-  inherits: false;
-  initial-value: 0;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .footer-letter,
-  .footer-mark {
-    animation: none !important;
-    transition: none !important;
-  }
-}
 
 /* Theme toggle icon: dark shows the sun (switch to light), light shows the moon. */
 .theme-icon-moon { display: none; }
