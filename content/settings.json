@@ -1,0 +1,67 @@
+{
+  "companyName": "Quanta",
+  "tagline": "A five-person engineering and design team turning ideas into thoughtful, reliable digital experiences.",
+  "email": "hello@quanta.studio",
+  "location": "Remote — Worldwide",
+  "phone": "",
+  "socials": {
+    "twitter": "",
+    "instagram": "",
+    "facebook": "",
+    "github": "",
+    "linkedin": ""
+  },
+  "availability": {
+    "enabled": false,
+    "message": "We have 2 project slots open for Q1 2027.",
+    "badge_color": "green"
+  },
+  "analytics": {
+    "ga4_measurement_id": ""
+  },
+  "contact_api_endpoint": "",
+  "og_image": "/og-image.png",
+  "stats": [
+    {
+      "number": "5",
+      "label": "Team Members"
+    },
+    {
+      "number": "3+",
+      "label": "Projects Shipped"
+    },
+    {
+      "number": "100%",
+      "label": "Client Retention"
+    },
+    {
+      "number": "2025",
+      "label": "Founded"
+    }
+  ],
+  "features": {
+    "partners": true,
+    "clients": true,
+    "clientsOnHome": true,
+    "portal": true
+  },
+  "seo": {
+    "siteUrl": "https://quanta.studio",
+    "title": "QUANTA | Independent Software Studio",
+    "description": "A small software team building thoughtful digital products. We design, build, and ship digital products end-to-end.",
+    "keywords": [
+      "software studio",
+      "web development",
+      "digital products",
+      "UI/UX design",
+      "frontend development",
+      "backend development"
+    ]
+  },
+  "timezone": "Asia/Karachi",
+  "whatsapp": {
+    "number": "",
+    "message": "Hi! I'd like to get in touch with your team.",
+    "visible": false
+  }
+}

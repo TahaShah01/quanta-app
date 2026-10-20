@@ -1,0 +1,137 @@
+[
+  {
+    "id": "project-alpha",
+    "num": "01",
+    "title": "Project Alpha",
+    "slug": "alpha",
+    "category": "Web Platform",
+    "description": "Modern web platform for a growing business.",
+    "overview": "A comprehensive web platform designed to scale with the client's growing business needs. We focused on performance, accessibility, and a clean user experience from the ground up.",
+    "approach": "We started with a focused discovery phase to understand the core problem, then moved into rapid prototyping and iteration. The team worked in tight feedback loops — designing, building, and testing in parallel to ship faster without sacrificing quality.",
+    "outcome": "The final product was delivered on time and on budget, with a clean codebase, comprehensive test coverage, and deployment infrastructure in place. The client now has a solid foundation to build upon as their business grows.",
+    "results": [],
+    "technologies": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "images": [],
+    "year": "2026",
+    "teamMembers": [
+      "member-taha",
+      "member-waleed",
+      "member-faseeh"
+    ],
+    "liveUrl": "",
+    "visualType": "alpha",
+    "featured": true,
+    "published": true,
+    "order": 1
+  },
+  {
+    "id": "project-nova",
+    "num": "02",
+    "title": "Project Nova",
+    "slug": "nova",
+    "category": "AI Product",
+    "description": "AI-powered product designed around a focused workflow.",
+    "overview": "An AI-powered product that integrates large language models into a focused, distraction-free workflow tool. We designed the UX to feel natural and intelligent without overwhelming users with AI complexity.",
+    "approach": "Research-first approach. We ran user interviews, mapped existing workflows, and designed a product that felt like a natural extension of how people already work. The AI layer was carefully embedded so it feels assistive rather than intrusive.",
+    "outcome": "Shipped a lean, focused MVP that users praised for its simplicity. The AI features work invisibly in the background, surfacing when relevant and staying out of the way when not needed.",
+    "results": [],
+    "technologies": [
+      "React",
+      "Python",
+      "OpenAI"
+    ],
+    "images": [],
+    "year": "2026",
+    "teamMembers": [
+      "member-zeeshan",
+      "member-yousaf"
+    ],
+    "liveUrl": "",
+    "visualType": "nova",
+    "featured": true,
+    "published": true,
+    "order": 2
+  },
+  {
+    "id": "project-orbit",
+    "num": "03",
+    "title": "Project Orbit",
+    "slug": "orbit",
+    "category": "E-Commerce",
+    "description": "Conversion-focused digital experience.",
+    "overview": "A high-converting e-commerce experience built around storytelling and brand identity. Every interaction was designed to reduce friction and guide users naturally toward purchase decisions.",
+    "approach": "We collaborated closely with the client's brand team to build a store that felt as premium as their products. GSAP animations, custom product configurators, and a streamlined checkout flow were the key technical challenges.",
+    "outcome": "Launched with strong conversion rates from day one. The client reported a measurable uplift in average order value attributed to the improved product presentation and simplified checkout.",
+    "results": [],
+    "technologies": [
+      "Figma",
+      "GSAP",
+      "Shopify"
+    ],
+    "images": [],
+    "year": "2025",
+    "teamMembers": [
+      "member-taha",
+      "member-zeeshan",
+      "member-yousaf"
+    ],
+    "liveUrl": "",
+    "visualType": "orbit",
+    "featured": true,
+    "published": true,
+    "order": 3
+  },
+  {
+    "title": "lORA",
+    "slug": "lora",
+    "category": "Web Platform",
+    "description": "DFGSDFGS",
+    "overview": "DFSGDFS",
+    "approach": "DFSFDS",
+    "outcome": "FSDDFS",
+    "results": [],
+    "technologies": [
+      "hTML"
+    ],
+    "images": [],
+    "year": "2026",
+    "teamMembers": [
+      "member-yousaf",
+      "member-zeeshan"
+    ],
+    "liveUrl": "",
+    "visualType": "alpha",
+    "featured": true,
+    "published": true,
+    "id": "project-1791971888211",
+    "num": "04",
+    "order": 4
+  },
+  {
+    "title": "Faseeh",
+    "slug": "faseeh",
+    "category": "",
+    "description": "edfswetwrerwt",
+    "overview": "yreterytterert",
+    "approach": "hfddfsggdfertgfd",
+    "outcome": "rsegsdfgrsfg",
+    "results": [],
+    "technologies": [
+      "any"
+    ],
+    "images": [],
+    "year": "2026",
+    "teamMembers": [],
+    "liveUrl": "",
+    "visualType": "alpha",
+    "featured": false,
+    "published": true,
+    "id": "project-1791986394754",
+    "num": "05",
+    "order": 5
+  }
+]

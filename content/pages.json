@@ -1,0 +1,418 @@
+{
+  "about": {
+    "meta": {
+      "title": "About Us | QUANTA",
+      "description": "We are a {teamCountWord}-person software studio that blends design and engineering into one practice. Learn about our philosophy, stack, and values."
+    },
+    "hero": {
+      "eyebrow": "About Quanta",
+      "lines": [
+        {
+          "text": "A small studio"
+        },
+        {
+          "text": "with serious ambition.",
+          "italic": true
+        }
+      ],
+      "body": "QUANTA is a {teamCountWord}-person digital product studio. We combine design, engineering, quality assurance, and cloud infrastructure into one tight-knit squad, because the best software happens when everyone owns the outcome."
+    },
+    "why": {
+      "title": "Why we exist.",
+      "paragraphs": [
+        "We started QUANTA because we were tired of the bloated agency model: endless management layers, misaligned incentives, and decks that looked great but collapsed when deployed to production.",
+        "We built a studio small enough that every person is essential, but experienced enough to own systems end to end. {TeamCountWord} people covering frontend, UI/UX design, backend architecture, and QA/DevOps.",
+        "No middle management. No handoffs. Designers and engineers working side by side from the first prototype to the final deployment."
+      ]
+    },
+    "values": {
+      "eyebrow": "Our core values",
+      "title": [
+        "What we believe in."
+      ],
+      "items": [
+        {
+          "num": "01",
+          "title": "Craft over volume",
+          "description": "We take on fewer projects to give each one the attention it deserves. Every detail matters — from the first line of code to the final pixel."
+        },
+        {
+          "num": "02",
+          "title": "Clarity in complexity",
+          "description": "Good software makes complex things feel simple. We reduce friction, strip away unnecessary layers, and build interfaces that explain themselves."
+        },
+        {
+          "num": "03",
+          "title": "Direct collaboration",
+          "description": "No account managers, no handoffs. You work with the people building your product — designers and engineers who understand the full picture."
+        },
+        {
+          "num": "04",
+          "title": "Shipping matters",
+          "description": "Ideas are free. Execution is everything. We plan, build, test and deploy with the same level of care across every stage."
+        }
+      ]
+    },
+    "process": {
+      "eyebrow": "Delivery process",
+      "title": [
+        "Four phases.",
+        "Zero surprises."
+      ],
+      "items": [
+        {
+          "num": "01",
+          "title": "Discover",
+          "description": "We start by understanding your business, goals, and constraints. We ask hard questions early so we don't build the wrong thing."
+        },
+        {
+          "num": "02",
+          "title": "Design",
+          "description": "From wireframes to high-fidelity prototypes, we define the experience before writing a single line of production code."
+        },
+        {
+          "num": "03",
+          "title": "Develop",
+          "description": "Frontend and backend work in parallel. TypeScript, modern frameworks, clean architecture — built to scale, built to last."
+        },
+        {
+          "num": "04",
+          "title": "Deliver",
+          "description": "QA, performance testing, deployment pipelines. We don't just hand off code — we launch products and stand behind them."
+        }
+      ]
+    }
+  },
+  "services": {
+    "meta": {
+      "title": "Services & Capabilities | QUANTA",
+      "description": "End-to-end digital engineering and product design. We design, architect, build, and deploy high-performance web platforms."
+    },
+    "hero": {
+      "eyebrow": "Services & Capabilities",
+      "lines": [
+        {
+          "text": "Full-stack craft for"
+        },
+        {
+          "text": "products that demand precision.",
+          "italic": true
+        }
+      ],
+      "body": "We don't fragment projects across disjointed departments. As a compact team, we own the entire lifecycle, from interface architecture to production deployment.",
+      "metaLabel": "disciplines"
+    },
+    "deliverablesLabel": "Deliverables & core strengths",
+    "askLabel": "Ask about this service",
+    "framework": {
+      "eyebrow": "Delivery framework",
+      "title": [
+        "How your project moves",
+        "through our team."
+      ],
+      "description": "No middle management. You collaborate directly with the designers and developers writing the code.",
+      "items": [
+        {
+          "step": "01",
+          "name": "Discovery & Architecture",
+          "desc": "We analyze technical constraints, define data models, and map user flows before writing code."
+        },
+        {
+          "step": "02",
+          "name": "Interactive Design",
+          "desc": "Prototypes crafted in Figma with real content, design tokens, and micro-interactions."
+        },
+        {
+          "step": "03",
+          "name": "Sprint Execution",
+          "desc": "Fast, production-grade builds with continuous preview deployments and weekly syncs."
+        },
+        {
+          "step": "04",
+          "name": "QA & Hardening",
+          "desc": "Performance benchmarking, responsive testing, and a calm cloud launch."
+        }
+      ]
+    }
+  },
+  "projects": {
+    "meta": {
+      "title": "Projects & Case Studies | QUANTA",
+      "description": "Explore our portfolio of digital products: web platforms, applications, and design systems built with precision."
+    },
+    "hero": {
+      "eyebrow": "Our work",
+      "lines": [
+        {
+          "text": "Things we've"
+        },
+        {
+          "text": "designed & shipped.",
+          "italic": true
+        }
+      ],
+      "body": "Each project is a close collaboration with partners who care about engineering rigor, speed, and clean visual execution.",
+      "metaLabel": "case studies"
+    }
+  },
+  "people": {
+    "meta": {
+      "title": "People & Partners | QUANTA",
+      "description": "Meet the people behind Quanta and the partners we work alongside: designers, engineers, quality and deployment specialists."
+    },
+    "hero": {
+      "eyebrow": "People & partners",
+      "lines": [
+        {
+          "text": "Different disciplines."
+        },
+        {
+          "text": "One shared standard.",
+          "italic": true
+        }
+      ],
+      "body": "Interface design, frontend performance, backend systems, automated QA, and calm cloud deployment, all inside one tightly integrated squad.",
+      "metaLabel": "people"
+    },
+    "expertiseLabel": "Expertise & focus",
+    "connectLabel": "Connect",
+    "partners": {
+      "navLabel": "Partners",
+      "eyebrow": "Partners",
+      "title": [
+        "People and companies",
+        "we build alongside."
+      ],
+      "description": "Individuals and studios who bring us work, extend what we can deliver, and share our standards.",
+      "sinceLabel": "Since",
+      "visitLabel": "Visit"
+    }
+  },
+  "blog": {
+    "meta": {
+      "title": "Blog & Essays | QUANTA",
+      "description": "Thoughts from a small software studio on lean engineering, interface design, performance, and building modern software."
+    },
+    "hero": {
+      "eyebrow": "Studio notes",
+      "lines": [
+        {
+          "text": "How we think,"
+        },
+        {
+          "text": "build, and ship.",
+          "italic": true
+        }
+      ],
+      "body": "No marketing fluff. Practical notes, design philosophies, and architectural decisions from the people doing the work."
+    },
+    "emptyMessage": "Articles are being prepared. Check back shortly.",
+    "featuredLabel": "Featured",
+    "readLabel": "Read article",
+    "detail": {
+      "writtenBy": "Written by",
+      "ctaLabel": "Work with us",
+      "moreLabel": "More from the studio",
+      "minRead": "min read",
+      "notFoundTitle": "Post Not Found",
+      "fallbackEyebrow": "Essay",
+      "backLabel": "All essays"
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact | QUANTA",
+      "description": "Start a conversation with Quanta. Tell us about your project and we'll get back to you within 24 hours."
+    },
+    "hero": {
+      "eyebrow": "Start an engagement",
+      "lines": [
+        {
+          "text": "Let's build"
+        },
+        {
+          "text": "something exceptional.",
+          "italic": true
+        }
+      ],
+      "body": "Tell us about your project scope and objectives. You'll speak directly with the people who will build it, not account executives."
+    },
+    "info": {
+      "emailLabel": "Direct Email",
+      "locationLabel": "Operating Style",
+      "responseLabel": "SLA Response Time",
+      "responseValue": "Within 24 business hours"
+    },
+    "engage": {
+      "title": "How We Engage",
+      "items": [
+        {
+          "icon": "Zap",
+          "title": "Fixed-Scope Sprints",
+          "description": "Clear deliverables and milestone pricing. No unexpected hourly bills."
+        },
+        {
+          "icon": "Users",
+          "title": "The whole squad",
+          "description": "Every project gets dedicated time from frontend, backend, design, and QA."
+        },
+        {
+          "icon": "ShieldCheck",
+          "title": "100% Code Handover",
+          "description": "Complete repository ownership, CI/CD configs, and documentation transferred upon completion."
+        }
+      ]
+    },
+    "form": {
+      "nameLabel": "Name *",
+      "namePlaceholder": "Your full name",
+      "emailLabel": "Email *",
+      "emailPlaceholder": "you@company.com",
+      "companyLabel": "Company or Project Name",
+      "companyPlaceholder": "Acme Corp / Stealth Startup",
+      "budgetLabel": "Estimated Budget Range",
+      "budgetOptions": [
+        "Under $5K",
+        "$5K – $15K",
+        "$15K – $50K",
+        "$50K+",
+        "Not sure yet"
+      ],
+      "messageLabel": "Project Details & Objectives *",
+      "messagePlaceholder": "Tell us what you're building — key goals, timeline constraints, existing architecture...",
+      "submit": "Send inquiry",
+      "sending": "Sending message...",
+      "successTitle": "Message received.",
+      "successBody": "Thanks for reaching out, {name}. We've logged your inquiry and our team will review your technical requirements within 24 hours."
+    }
+  },
+  "changelog": {
+    "meta": {
+      "title": "Changelog | QUANTA",
+      "description": "A continuous log of updates, features, client releases, and improvements shipped by Quanta."
+    },
+    "hero": {
+      "eyebrow": "Release history",
+      "lines": [
+        {
+          "text": "Everything we"
+        },
+        {
+          "text": "build, refine, and ship.",
+          "italic": true
+        }
+      ],
+      "body": "An open record of updates across our own platforms and client work.",
+      "metaLabel": "entries"
+    }
+  },
+  "portal": {
+    "meta": {
+      "title": "Client Portal | QUANTA",
+      "description": "Private sign-in for Quanta clients: live project progress, milestones and updates."
+    },
+    "hero": {
+      "eyebrow": "Client portal",
+      "lines": [
+        {
+          "text": "Your project,"
+        },
+        {
+          "text": "live and in the open.",
+          "italic": true
+        }
+      ],
+      "body": "Sign in with the credentials we sent you to follow progress, milestones and updates as they happen."
+    },
+    "login": {
+      "title": "Sign in",
+      "description": "Use the email and password we shared when your project kicked off.",
+      "emailLabel": "Email",
+      "passwordLabel": "Password",
+      "button": "Sign in",
+      "signingIn": "Signing in…",
+      "error": "That email and password don't match.",
+      "help": "No credentials yet? Ask your project lead, or",
+      "helpLink": {
+        "label": "get in touch",
+        "href": "/contact"
+      }
+    },
+    "disabled": {
+      "title": "The client portal is closed for now",
+      "body": "Sign-in is switched off at the moment. If you need an update on your project, write to us and we'll reply the same day.",
+      "button": {
+        "label": "Contact the studio",
+        "href": "/contact"
+      }
+    },
+    "dashboard": {
+      "greeting": "Welcome back",
+      "liveLabel": "Live",
+      "progressLabel": "Overall progress",
+      "milestonesLabel": "Milestones",
+      "updatesLabel": "Latest updates",
+      "linksLabel": "Links",
+      "statusLabel": "Status",
+      "targetLabel": "Target date",
+      "startLabel": "Started",
+      "emptyUpdates": "No updates yet. We'll post here as work moves.",
+      "emptyMilestones": "Milestones will appear here once the plan is agreed.",
+      "signOut": "Sign out",
+      "statusLabels": {
+        "planning": "Planning",
+        "design": "Design",
+        "development": "In development",
+        "testing": "Testing",
+        "launched": "Launched",
+        "on-hold": "On hold"
+      },
+      "milestoneLabels": {
+        "done": "Done",
+        "active": "In progress",
+        "todo": "Up next"
+      },
+      "dueLabel": "Due",
+      "syncedLabel": "Updated"
+    }
+  },
+  "notFound": {
+    "code": "404",
+    "title": "This page isn't on the map.",
+    "body": "The link may be broken or the page may have moved. Press {shortcut} to search, or head back home.",
+    "button": "Back to home"
+  },
+  "projectDetail": {
+    "notFoundTitle": "Project Not Found",
+    "chapters": [
+      {
+        "label": "01 · The problem",
+        "title": "Overview",
+        "fallback": ""
+      },
+      {
+        "label": "02 · The approach",
+        "title": "How we built it",
+        "fallback": "We started with a focused discovery phase, then moved into rapid prototyping, designing, building and testing in tight loops."
+      },
+      {
+        "label": "03 · The result",
+        "title": "Outcome",
+        "fallback": "Delivered on time, with a clean codebase and deployment infrastructure in place."
+      }
+    ],
+    "statLabels": {
+      "technologies": "Technologies",
+      "people": "People on it",
+      "shipped": "Shipped",
+      "result": "result"
+    },
+    "backLabel": "All projects",
+    "liveLabel": "Visit live site",
+    "classificationLabel": "Classification",
+    "releaseLabel": "Release year",
+    "stackLabel": "Technology stack",
+    "teamLabel": "On this build",
+    "ctaFallback": "Want something similar? Tell us what you're building and we'll tell you how we'd approach it."
+  }
+}

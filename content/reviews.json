@@ -1,0 +1,52 @@
+{
+  "reviews": [
+    {
+      "id": "review-1",
+      "reviewerName": "Sarah Mitchell",
+      "reviewerCompany": "Veritas Labs",
+      "reviewerRole": "CTO",
+      "rating": 5,
+      "title": "Truly exceptional engineering and product vision",
+      "body": "Quanta didn't just build what we asked for — they pushed back when our ideas weren't right, proposed better solutions, and delivered something we couldn't have imagined ourselves. Truly exceptional work.",
+      "portalAccountId": "",
+      "status": "approved",
+      "featured": true,
+      "submittedAt": "2025-11-15T14:20:00.000Z",
+      "moderatedAt": "2025-11-15T15:00:00.000Z",
+      "moderationNote": "Verified client - Project Alpha deliverable",
+      "order": 1
+    },
+    {
+      "id": "review-2",
+      "reviewerName": "James Okafor",
+      "reviewerCompany": "Meridian AI",
+      "reviewerRole": "Founder",
+      "rating": 5,
+      "title": "Direct access, thoughtful decisions, zero delays",
+      "body": "Working with a small team meant we had direct access to the engineers and designer at every step. No middlemen, no delays, just fast, thoughtful work. Would hire them again without hesitation.",
+      "portalAccountId": "",
+      "status": "approved",
+      "featured": true,
+      "submittedAt": "2025-12-04T09:30:00.000Z",
+      "moderatedAt": "2025-12-04T10:15:00.000Z",
+      "moderationNote": "Verified client - Meridian AI Project Nova",
+      "order": 2
+    },
+    {
+      "id": "review-3",
+      "reviewerName": "Priya Nair",
+      "reviewerCompany": "Cascade Commerce",
+      "reviewerRole": "Head of Product",
+      "rating": 5,
+      "title": "Stunning aesthetics and significant conversion lift",
+      "body": "Our new storefront is stunning and our conversion rate improved significantly. Quanta's attention to detail — from micro-animations to page speed — made a real difference to our bottom line.",
+      "portalAccountId": "",
+      "status": "approved",
+      "featured": true,
+      "submittedAt": "2026-01-18T16:45:00.000Z",
+      "moderatedAt": "2026-01-18T17:10:00.000Z",
+      "moderationNote": "Verified client - Project Orbit",
+      "order": 3
+    }
+  ]
+}

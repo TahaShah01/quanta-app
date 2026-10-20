@@ -1,0 +1,151 @@
+{
+  "ui": {
+    "railLabel": "Page sections",
+    "scrollHint": "Scroll",
+    "previous": "Previous testimonial",
+    "next": "Next testimonial",
+    "testimonialsLabel": "Choose a testimonial",
+    "clientsLabel": "Visit"
+  },
+  "hero": {
+    "navLabel": "Intro",
+    "eyebrow": "QUANTA — DIGITAL PRODUCT STUDIO",
+    "lines": [
+      {
+        "text": "We build"
+      },
+      {
+        "text": "digital products",
+        "italic": true
+      },
+      {
+        "text": "that move"
+      },
+      {
+        "text": "businesses forward."
+      }
+    ],
+    "body": "A {teamCountWord}-person engineering and design team turning ideas into thoughtful, reliable digital experiences.",
+    "primaryCta": {
+      "label": "View our work",
+      "href": "/projects"
+    },
+    "secondaryCta": {
+      "label": "Meet the {teamCount} of us",
+      "href": "/people"
+    }
+  },
+  "preloader": {
+    "brand": "Quanta",
+    "caption": "Digital product studio"
+  },
+  "manifesto": {
+    "navLabel": "Approach",
+    "eyebrow": "Our approach",
+    "text": "We stay small on purpose. Design, engineering and quality sit at one table, so an idea reaches production without a single handoff lost in translation.",
+    "diagramCenter": "One table",
+    "diagramCaption": "{ServiceCountWord} disciplines. One team."
+  },
+  "stats": {
+    "items": [
+      {
+        "value": "{teamCount}",
+        "label": "People, one team"
+      },
+      {
+        "value": "{serviceCount}",
+        "label": "Disciplines under one roof"
+      },
+      {
+        "value": "{projectCount}",
+        "label": "Products shipped"
+      },
+      {
+        "value": "{toolCount}",
+        "label": "Tools in the daily stack"
+      }
+    ]
+  },
+  "capabilities": {
+    "navLabel": "Capabilities",
+    "eyebrow": "Capabilities",
+    "title": [
+      "Small team.",
+      "Serious work."
+    ],
+    "description": "We bring design, frontend engineering, backend systems, quality assurance and deployment together in one cohesive unit.",
+    "link": {
+      "label": "Explore Full Services Breakdown",
+      "href": "/services"
+    }
+  },
+  "techStack": {
+    "navLabel": "Stack",
+    "eyebrow": "Modern Engineering Stack",
+    "title": [
+      "Technologies chosen for longevity and speed."
+    ],
+    "description": "We select tools that prioritize performance, maintainability, and exceptional developer ergonomics."
+  },
+  "work": {
+    "navLabel": "Work",
+    "eyebrow": "Selected Work",
+    "title": [
+      "Case Studies & Products"
+    ],
+    "description": "A selection of digital platforms we've architected, designed, and deployed.",
+    "link": {
+      "label": "View all projects",
+      "href": "/projects"
+    },
+    "cardCta": "Explore Case Study"
+  },
+  "testimonials": {
+    "navLabel": "Clients",
+    "eyebrow": "Client Trust & Outcomes",
+    "title": [
+      "What teams say about shipping with us."
+    ],
+    "description": "Direct access to senior builders without account management overhead translates into velocity and quality."
+  },
+  "team": {
+    "navLabel": "Team",
+    "eyebrow": "The Core Studio",
+    "title": [
+      "{TeamCountWord} people.",
+      "Different disciplines.",
+      "One team."
+    ],
+    "description": "Frontend, backend, UI/UX design, quality engineering, and deployment — working in tight feedback loops from kickoff to launch.",
+    "link": {
+      "label": "Meet all {teamCount} of us",
+      "href": "/people"
+    }
+  },
+  "cta": {
+    "navLabel": "Contact",
+    "lines": [
+      {
+        "text": "Have something"
+      },
+      {
+        "text": "worth building?",
+        "italic": true
+      }
+    ],
+    "subtitle": "Let's make it real.",
+    "button": {
+      "label": "Start a conversation",
+      "href": "/contact"
+    }
+  },
+  "clients": {
+    "navLabel": "Clients",
+    "eyebrow": "Closely working with",
+    "title": [
+      "Teams we",
+      "build alongside."
+    ],
+    "description": "A few of the people and companies we work with week to week."
+  }
+}

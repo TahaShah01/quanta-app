@@ -1,0 +1,66 @@
+[
+  {
+    "id": "faq-1",
+    "question": "What types of projects do you take on?",
+    "answer": "We work on web platforms, SaaS products, AI-powered tools, e-commerce experiences, and custom digital products. If you have a clear problem that software can solve, we want to hear about it. We specialize in greenfield builds and complete redesigns — not ongoing maintenance of legacy codebases.",
+    "category": "Scope",
+    "order": 1,
+    "published": true
+  },
+  {
+    "id": "faq-2",
+    "question": "Do you work with startups or only established companies?",
+    "answer": "Both. Some of our best work has been for early-stage startups who needed to move fast without cutting corners. We understand how to scope work for a seed-stage budget and how to design systems that can scale as your company grows. We do ask that clients come with a defined problem and a rough idea of what success looks like.",
+    "category": "Scope",
+    "order": 2,
+    "published": true
+  },
+  {
+    "id": "faq-3",
+    "question": "How much does a typical project cost?",
+    "answer": "It depends on scope, complexity, and timeline. A focused MVP typically starts around $5,000–$15,000. A full product with design, frontend, backend, and deployment can range from $15,000 to $50,000+. We're transparent about pricing from the first call — no surprise invoices.",
+    "category": "Pricing",
+    "order": 3,
+    "published": true
+  },
+  {
+    "id": "faq-4",
+    "question": "How long does a project take?",
+    "answer": "A focused MVP or redesign typically takes 4–8 weeks. Larger, more complex projects take 2–4 months. We map out a detailed timeline during the discovery phase so you know exactly what to expect before we start writing any code.",
+    "category": "Timeline",
+    "order": 4,
+    "published": true
+  },
+  {
+    "id": "faq-5",
+    "question": "Who will I be working with?",
+    "answer": "Directly with the people building your product. No account managers, no project handoffs. Depending on the scope, you'll have a primary point of contact on the team, but you'll always have visibility into the whole team's work. We use shared Notion spaces and regular video calls to keep communication tight.",
+    "category": "Process",
+    "order": 5,
+    "published": true
+  },
+  {
+    "id": "faq-6",
+    "question": "Do you offer retainers or ongoing support?",
+    "answer": "Yes. After delivering a project, many clients move to a monthly retainer for feature development, maintenance, and support. Retainers are scoped on a case-by-case basis. We don't lock clients into long contracts — retainers are month-to-month.",
+    "category": "Pricing",
+    "order": 6,
+    "published": true
+  },
+  {
+    "id": "faq-7",
+    "question": "What happens after the project is delivered?",
+    "answer": "We conduct a full handoff — documentation, code walkthrough, and a 2-week post-launch support window included in every project. If you want continued support beyond that, we offer monthly retainers. We also ensure you (or your team) can independently manage and extend the codebase after we hand it over.",
+    "category": "Process",
+    "order": 7,
+    "published": true
+  },
+  {
+    "id": "faq-8",
+    "question": "Do you sign NDAs?",
+    "answer": "Yes, we're happy to sign an NDA before any project discussion. Confidentiality is standard for us — we don't talk publicly about client projects without explicit permission.",
+    "category": "Legal",
+    "order": 8,
+    "published": true
+  }
+]

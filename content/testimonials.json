@@ -1,0 +1,38 @@
+[
+  {
+    "id": "testimonial-1",
+    "clientName": "Sarah Mitchell",
+    "clientRole": "CTO",
+    "clientCompany": "Veritas Labs",
+    "quote": "Quanta didn't just build what we asked for — they pushed back when our ideas weren't right, proposed better solutions, and delivered something we couldn't have imagined ourselves. Truly exceptional work.",
+    "avatar": "",
+    "rating": 5,
+    "projectId": "project-alpha",
+    "published": true,
+    "order": 1
+  },
+  {
+    "id": "testimonial-2",
+    "clientName": "James Okafor",
+    "clientRole": "Founder",
+    "clientCompany": "Meridian AI",
+    "quote": "Working with a small team meant we had direct access to the engineers and designer at every step. No middlemen, no delays, just fast, thoughtful work. Would hire them again without hesitation.",
+    "avatar": "",
+    "rating": 5,
+    "projectId": "project-nova",
+    "published": true,
+    "order": 2
+  },
+  {
+    "id": "testimonial-3",
+    "clientName": "Priya Nair",
+    "clientRole": "Head of Product",
+    "clientCompany": "Cascade Commerce",
+    "quote": "Our new storefront is stunning and our conversion rate improved significantly. Quanta's attention to detail — from micro-animations to page speed — made a real difference to our bottom line.",
+    "avatar": "",
+    "rating": 5,
+    "projectId": "project-orbit",
+    "published": true,
+    "order": 3
+  }
+]

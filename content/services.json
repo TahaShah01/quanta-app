@@ -1,0 +1,92 @@
+[
+  {
+    "id": "service-frontend",
+    "num": "01",
+    "title": "Frontend Development",
+    "icon": "Monitor",
+    "shortDesc": "Interfaces, interactions and performant web experiences.",
+    "description": "We build pixel-perfect, blazing-fast web interfaces using React and Next.js. From single-page apps to complex multi-step workflows, we craft every interaction with care — ensuring speed, accessibility, and cross-device consistency.",
+    "features": [
+      "React & Next.js applications",
+      "TypeScript-first development",
+      "GSAP & Framer Motion animations",
+      "Core Web Vitals optimization",
+      "Cross-browser & device testing",
+      "Accessibility (WCAG) compliance"
+    ],
+    "published": true,
+    "order": 1
+  },
+  {
+    "id": "service-design",
+    "num": "02",
+    "title": "UI / UX Design",
+    "icon": "Pen",
+    "shortDesc": "Interfaces that are clear, intentional and enjoyable to use.",
+    "description": "Great software begins with intentional design. We research, prototype, and iterate until we've found the simplest, most elegant solution to every design problem — then we make it beautiful.",
+    "features": [
+      "User research & journey mapping",
+      "Wireframing & prototyping in Figma",
+      "Design system creation",
+      "Responsive UI design",
+      "Interaction design & micro-animations",
+      "Usability testing"
+    ],
+    "published": true,
+    "order": 2
+  },
+  {
+    "id": "service-backend",
+    "num": "03",
+    "title": "Backend Development",
+    "icon": "Server",
+    "shortDesc": "Reliable APIs, business logic and scalable systems.",
+    "description": "We architect and build the systems that power your product — REST and GraphQL APIs, authentication, databases, third-party integrations, and the infrastructure that keeps everything running reliably.",
+    "features": [
+      "Node.js / Express / Fastify APIs",
+      "Database design (SQL & NoSQL)",
+      "Authentication & authorization",
+      "Third-party API integrations",
+      "Real-time features (WebSocket)",
+      "Cloud architecture (AWS / Vercel)"
+    ],
+    "published": true,
+    "order": 3
+  },
+  {
+    "id": "service-qa",
+    "num": "04",
+    "title": "Quality Assurance",
+    "icon": "CheckCircle",
+    "shortDesc": "Testing, debugging and reliability throughout development.",
+    "description": "Quality is not an afterthought at Quanta — it's baked into every sprint. Our QA process covers automated testing, performance benchmarking, cross-browser validation, and end-to-end scenario testing before anything ships.",
+    "features": [
+      "Unit & integration testing (Jest, Vitest)",
+      "End-to-end testing (Playwright, Cypress)",
+      "Performance audits (Lighthouse)",
+      "Regression testing",
+      "Bug tracking & reporting",
+      "Pre-launch checklist & sign-off"
+    ],
+    "published": true,
+    "order": 4
+  },
+  {
+    "id": "service-deployment",
+    "num": "05",
+    "title": "Deployment & DevOps",
+    "icon": "Rocket",
+    "shortDesc": "Production builds, deployment pipelines and launch support.",
+    "description": "We don't just hand over code — we launch your product and make sure it stays healthy. From CI/CD pipeline setup to production monitoring, we handle the full deployment lifecycle.",
+    "features": [
+      "CI/CD pipeline configuration",
+      "Vercel / AWS / Railway deployment",
+      "Domain & DNS configuration",
+      "SSL certificate setup",
+      "Production monitoring & alerting",
+      "Post-launch support"
+    ],
+    "published": true,
+    "order": 5
+  }
+]

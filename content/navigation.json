@@ -1,0 +1,130 @@
+{
+  "links": [
+    {
+      "name": "About",
+      "path": "/about",
+      "hint": "Studio, values, process"
+    },
+    {
+      "name": "Services",
+      "path": "/services",
+      "hint": "What we do"
+    },
+    {
+      "name": "Projects",
+      "path": "/projects",
+      "hint": "Selected work"
+    },
+    {
+      "name": "People",
+      "path": "/people",
+      "hint": "Team and partners"
+    },
+    {
+      "name": "Blog",
+      "path": "/blog",
+      "hint": "Notes and essays"
+    }
+  ],
+  "extraSearch": [
+    {
+      "name": "Changelog",
+      "path": "/changelog",
+      "hint": "What shipped"
+    },
+    {
+      "name": "Contact",
+      "path": "/contact",
+      "hint": "Start a conversation"
+    },
+    {
+      "name": "Client portal",
+      "path": "/portal",
+      "hint": "Sign in to follow your project",
+      "feature": "portal"
+    },
+    {
+      "name": "Reviews",
+      "path": "/reviews",
+      "hint": "Verified client experiences and ratings"
+    }
+  ],
+  "contactButton": {
+    "label": "Let's talk",
+    "href": "/contact"
+  },
+  "mobileHomeLabel": "Home",
+  "mobileContactLabel": "Contact",
+  "footer": {
+    "helloLabel": "Say hello",
+    "clockLabel": "Studio time",
+    "columns": [
+      {
+        "title": "Studio",
+        "links": [
+          {
+            "label": "About",
+            "href": "/about"
+          },
+          {
+            "label": "Services",
+            "href": "/services"
+          },
+          {
+            "label": "Projects",
+            "href": "/projects"
+          },
+          {
+            "label": "People",
+            "href": "/people"
+          },
+          {
+            "label": "Reviews",
+            "href": "/reviews"
+          },
+          {
+            "label": "Contact",
+            "href": "/contact"
+          }
+        ]
+      },
+      {
+        "title": "Resources",
+        "links": [
+          {
+            "label": "Blog & essays",
+            "href": "/blog"
+          },
+          {
+            "label": "Changelog",
+            "href": "/changelog"
+          },
+          {
+            "label": "Client portal",
+            "href": "/portal",
+            "feature": "portal"
+          },
+          {
+            "label": "FAQ",
+            "href": "/contact#faq"
+          }
+        ]
+      }
+    ],
+    "connectTitle": "Connect",
+    "legalLinks": [
+      {
+        "label": "Privacy",
+        "href": "/privacy"
+      },
+      {
+        "label": "Terms",
+        "href": "/terms"
+      }
+    ],
+    "copyright": "{companyName}",
+    "backToTop": "Back to top",
+    "copyEmail": "Copy email",
+    "copied": "Copied"
+  }
+}

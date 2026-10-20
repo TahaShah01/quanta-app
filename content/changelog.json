@@ -1,0 +1,26 @@
+[
+  {
+    "id": "changelog-1",
+    "title": "Website launch",
+    "description": "The Quanta website is live. Fully responsive, dark/light mode, animated, and built entirely in-house.",
+    "type": "feature",
+    "date": "2026-10-14",
+    "published": true
+  },
+  {
+    "id": "changelog-2",
+    "title": "Admin portal released",
+    "description": "Internal admin portal now live. Team can manage projects, testimonials, blog posts, and settings from a central dashboard.",
+    "type": "feature",
+    "date": "2026-10-14",
+    "published": true
+  },
+  {
+    "id": "changelog-3",
+    "title": "Blog section added",
+    "description": "The Quanta blog is now live. Expect writing on frontend engineering, design systems, deployment, and lessons from building products.",
+    "type": "feature",
+    "date": "2026-10-14",
+    "published": true
+  }
+]

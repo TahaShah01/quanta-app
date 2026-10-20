@@ -1,0 +1,38 @@
+{
+  "footnote": "Mastered across all {teamCount} team roles",
+  "categories": [
+    {
+      "category": "Frontend & Architecture",
+      "items": [
+        { "name": "Next.js 16", "role": "App Router & SSR" },
+        { "name": "React 19", "role": "UI Primitives & Server Actions" },
+        { "name": "TypeScript", "role": "Strict Type Safety" },
+        { "name": "Tailwind CSS", "role": "Design Token Utility" },
+        { "name": "GSAP", "role": "High-Performance Motion" },
+        { "name": "Radix UI", "role": "Accessible Headless Components" }
+      ]
+    },
+    {
+      "category": "Backend & Systems",
+      "items": [
+        { "name": "Node.js", "role": "High-Throughput Runtime" },
+        { "name": "Fastify / Express", "role": "REST & GraphQL Services" },
+        { "name": "PostgreSQL", "role": "Relational Data Modeling" },
+        { "name": "Prisma / Drizzle", "role": "Type-Safe ORM" },
+        { "name": "Redis", "role": "In-Memory Caching & Queues" },
+        { "name": "Supabase", "role": "Auth & Realtime Systems" }
+      ]
+    },
+    {
+      "category": "Cloud, DevOps & QA",
+      "items": [
+        { "name": "Vercel & AWS", "role": "Edge Compute & Serverless" },
+        { "name": "Docker", "role": "Reproducible Containers" },
+        { "name": "GitHub Actions", "role": "Automated CI/CD Pipelines" },
+        { "name": "Playwright", "role": "End-to-End Test Automation" },
+        { "name": "Vitest / Jest", "role": "Unit & Integration Testing" },
+        { "name": "Lighthouse CI", "role": "Core Web Vitals Enforcement" }
+      ]
+    }
+  ]
+}

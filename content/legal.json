@@ -1,0 +1,80 @@
+{
+  "privacy": {
+    "meta": {
+      "title": "Privacy Policy | QUANTA",
+      "description": "Read about how Quanta handles your personal information and data privacy."
+    },
+    "eyebrow": "Legal",
+    "title": "Privacy Policy",
+    "updated": "Last updated: October 2026",
+    "sections": [
+      {
+        "heading": "1. Information We Collect",
+        "body": "When you contact us through our website, we collect the information you voluntarily provide — including your name, email address, company name, and project details. We do not collect personal information unless you actively submit it."
+      },
+      {
+        "heading": "2. How We Use Your Information",
+        "body": "We use your information solely to respond to your inquiry, discuss potential projects, and provide our services. We will never sell, rent, or share your personal information with third parties for marketing purposes."
+      },
+      {
+        "heading": "3. Cookies & Analytics",
+        "body": "Our website may use essential cookies for functionality (such as remembering your theme preference). We do not use third-party tracking cookies or advertising pixels. If we implement analytics in the future, we will use privacy-respecting solutions."
+      },
+      {
+        "heading": "4. Data Security",
+        "body": "We take reasonable measures to protect your information. All communications through our website are encrypted via HTTPS. We limit access to personal data to team members who need it to respond to your inquiries."
+      },
+      {
+        "heading": "5. Your Rights",
+        "body": "You have the right to request access to, correction of, or deletion of your personal data at any time. To exercise these rights, please contact us at {contactEmail}."
+      },
+      {
+        "heading": "6. Changes to This Policy",
+        "body": "We may update this privacy policy from time to time. Any changes will be reflected on this page with an updated revision date. We encourage you to review this policy periodically."
+      }
+    ]
+  },
+  "terms": {
+    "meta": {
+      "title": "Terms of Service | QUANTA",
+      "description": "Review Quanta's terms of service governing the use of our website and services."
+    },
+    "eyebrow": "Legal",
+    "title": "Terms of Service",
+    "updated": "Last updated: October 2026",
+    "sections": [
+      {
+        "heading": "1. Agreement to Terms",
+        "body": "By accessing and using the Quanta website and services, you agree to be bound by these Terms of Service. If you disagree with any part of these terms, you may not access our services."
+      },
+      {
+        "heading": "2. Services",
+        "body": "Quanta provides digital product design, development, and deployment services. The specific scope, timeline, and deliverables for each project are defined in individual project agreements between Quanta and the client."
+      },
+      {
+        "heading": "3. Intellectual Property",
+        "body": "Unless otherwise specified in a project agreement, all intellectual property rights for work produced by Quanta will transfer to the client upon full payment. Quanta retains the right to showcase completed work in our portfolio unless explicitly restricted by the client."
+      },
+      {
+        "heading": "4. Payment Terms",
+        "body": "Payment terms, schedules, and methods are outlined in individual project agreements. Late payments may incur additional fees and may result in the suspension of services until outstanding balances are resolved."
+      },
+      {
+        "heading": "5. Limitation of Liability",
+        "body": "Quanta shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of our services. Our total liability shall not exceed the amount paid by you for the specific project in question."
+      },
+      {
+        "heading": "6. Confidentiality",
+        "body": "Both parties agree to maintain the confidentiality of any proprietary or sensitive information shared during the course of a project. This obligation survives the termination of any agreement between the parties."
+      },
+      {
+        "heading": "7. Changes to Terms",
+        "body": "We reserve the right to modify these terms at any time. Changes will be posted on this page with an updated revision date. Continued use of our services after changes constitutes acceptance of the modified terms."
+      },
+      {
+        "heading": "8. Contact",
+        "body": "For any questions regarding these terms, please contact us at {contactEmail}."
+      }
+    ]
+  }
+}

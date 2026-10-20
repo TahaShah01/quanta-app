@@ -1,0 +1,122 @@
+[
+  {
+    "id": "member-taha",
+    "num": "01",
+    "name": "Taha Shah",
+    "initials": "TS",
+    "role": "Frontend Developer",
+    "shortBio": "Focuses on crafting fluid interfaces and ensuring optimal performance across the web.",
+    "expertise": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Animation",
+      "Performance"
+    ],
+    "image": "",
+    "socialLinks": {
+      "twitter": "",
+      "instagram": "",
+      "facebook": "",
+      "github": "",
+      "linkedin": ""
+    },
+    "order": 1
+  },
+  {
+    "id": "member-zeeshan",
+    "num": "02",
+    "name": "Zeeshan Aftab",
+    "initials": "ZA",
+    "role": "Frontend Developer",
+    "shortBio": "Builds highly interactive user interfaces with a focus on modern tooling and scalable styling.",
+    "expertise": [
+      "React",
+      "Next.js",
+      "Tailwind",
+      "JavaScript",
+      "Interactive UI"
+    ],
+    "image": "",
+    "socialLinks": {
+      "twitter": "",
+      "instagram": "",
+      "facebook": "",
+      "github": "",
+      "linkedin": ""
+    },
+    "order": 2
+  },
+  {
+    "id": "member-yousaf",
+    "num": "03",
+    "name": "Yousaf Safeer",
+    "initials": "YS",
+    "role": "UI/UX Designer",
+    "shortBio": "Translates complex requirements into clear, intentional, and enjoyable visual experiences.",
+    "expertise": [
+      "Figma",
+      "UX Research",
+      "Design Systems",
+      "Prototyping",
+      "Visual Design"
+    ],
+    "image": "",
+    "socialLinks": {
+      "twitter": "",
+      "instagram": "",
+      "facebook": "",
+      "github": "",
+      "linkedin": ""
+    },
+    "order": 3
+  },
+  {
+    "id": "member-waleed",
+    "num": "04",
+    "name": "Waleed Ahmad",
+    "initials": "WA",
+    "role": "Backend Developer",
+    "shortBio": "Architects the robust data layers, APIs, and scalable logic that power our digital products.",
+    "expertise": [
+      "Node.js",
+      "APIs",
+      "Databases",
+      "Authentication",
+      "Server Architecture"
+    ],
+    "image": "",
+    "socialLinks": {
+      "twitter": "",
+      "instagram": "",
+      "facebook": "",
+      "github": "",
+      "linkedin": ""
+    },
+    "order": 4
+  },
+  {
+    "id": "member-faseeh",
+    "num": "05",
+    "name": "Faseeh ur Rehman",
+    "initials": "FR",
+    "role": "QA & Deployment",
+    "shortBio": "Ensures flawless delivery by overseeing testing pipelines, monitoring, and seamless deployments.",
+    "expertise": [
+      "Testing",
+      "Debugging",
+      "CI/CD",
+      "Deployment",
+      "Production Monitoring"
+    ],
+    "image": "",
+    "socialLinks": {
+      "twitter": "",
+      "instagram": "",
+      "facebook": "",
+      "github": "",
+      "linkedin": ""
+    },
+    "order": 5
+  }
+]

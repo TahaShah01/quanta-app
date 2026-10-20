@@ -1,0 +1,19 @@
+{
+  "id": "blog-001",
+  "slug": "why-we-build-small",
+  "title": "Why We Build Small (And Why You Should Too)",
+  "excerpt": "The bloated agency model is broken. Here's how a five-person team ships better products than studios ten times our size — and the philosophy behind it.",
+  "content": "<h2>The problem with scale</h2><p>Most software agencies sell you on scale. They show you a roster of 200 developers, multiple offices, and a client list full of enterprise logos. What they don't show you is the assembly line behind it — account managers who've never seen code, project managers keeping 8 clients happy at once, and developers who rotate between projects every week.</p><p>We built Quanta because we were tired of that model. Not just as builders — as people who'd worked inside it.</p><h2>What small actually means</h2><p>Five people is a constraint. But constraints force clarity. When there are only five of us, there's no room for a developer who doesn't fully understand the design intent, or a designer who doesn't know how the API works. Everyone understands the full picture.</p><p>This changes the output. Decisions are faster. Context doesn't get lost in handoffs. The person who designed the component is often the same person who built it.</p><h2>The counterintuitive truth about quality</h2><p>Most clients assume bigger teams mean faster delivery. The opposite is usually true. Communication overhead grows with team size. A five-person team that operates in sync will consistently outship a twenty-person team fragmented across timezones and project queues.</p><p>Our rule: if you can't fit the whole product in your head, the team is too big.</p><h2>What this means for you</h2><p>When you work with Quanta, you're not a ticket in a queue. You're talking directly to the people building your product. That changes the conversation — and it changes what we're able to build together.</p>",
+  "coverImage": "",
+  "author": "Taha Shah",
+  "authorRole": "Frontend Developer",
+  "authorImage": "",
+  "tags": ["philosophy", "team", "software development"],
+  "readTime": 4,
+  "published": true,
+  "publishedAt": "2026-10-14T00:00:00.000Z",
+  "seo": {
+    "title": "Why We Build Small — QUANTA Blog",
+    "description": "The bloated agency model is broken. Here's how a five-person team ships better products than studios ten times our size."
+  }
+}

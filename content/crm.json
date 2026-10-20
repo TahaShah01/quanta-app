@@ -1,0 +1,509 @@
+{
+  "contacts": [
+    {
+      "id": "contact-1",
+      "name": "Sarah Mitchell",
+      "email": "sarah@veritaslabs.com",
+      "phone": "+1 (415) 890-1204",
+      "organizationId": "org-1",
+      "organizationName": "Veritas Labs",
+      "jobTitle": "CTO",
+      "source": "Referral",
+      "status": "Active Client",
+      "owner": "Taha Shah",
+      "tags": [
+        "FinTech",
+        "Enterprise",
+        "Key Account"
+      ],
+      "notes": "Collaborated on Project Alpha infrastructure. Interested in Q3 design system expansion.",
+      "lastContactDate": "2026-02-10T14:00:00.000Z",
+      "nextFollowUp": "2026-04-15T10:00:00.000Z",
+      "createdAt": "2025-08-12T09:00:00.000Z",
+      "updatedAt": "2026-02-10T14:30:00.000Z"
+    },
+    {
+      "id": "contact-2",
+      "name": "James Okafor",
+      "email": "james@meridianai.io",
+      "phone": "+44 20 7946 0912",
+      "organizationId": "org-2",
+      "organizationName": "Meridian AI",
+      "jobTitle": "Founder & CEO",
+      "source": "Website Inquiry",
+      "status": "Active Client",
+      "owner": "Zeeshan Aftab",
+      "tags": [
+        "AI/ML",
+        "Interactive 3D",
+        "Web Platform"
+      ],
+      "notes": "Project Nova lead. Very pleased with 3D canvas performance and mobile experience.",
+      "lastContactDate": "2026-03-01T11:20:00.000Z",
+      "nextFollowUp": "2026-05-01T14:00:00.000Z",
+      "createdAt": "2025-10-04T12:00:00.000Z",
+      "updatedAt": "2026-03-01T11:30:00.000Z"
+    },
+    {
+      "id": "contact-3",
+      "name": "Elena Rostova",
+      "email": "elena@synapseflow.com",
+      "phone": "+1 (212) 555-0199",
+      "organizationId": "org-3",
+      "organizationName": "Synapse Flow",
+      "jobTitle": "VP Design",
+      "source": "Website Inquiry",
+      "status": "Lead",
+      "owner": "Yousaf Safeer",
+      "tags": [
+        "Design System",
+        "High Value",
+        "SaaS"
+      ],
+      "notes": "Looking for custom design tokens and Figma-to-code workflow.",
+      "lastContactDate": "2026-04-12T16:00:00.000Z",
+      "nextFollowUp": "2026-04-22T15:00:00.000Z",
+      "createdAt": "2026-04-10T08:30:00.000Z",
+      "updatedAt": "2026-04-12T16:15:00.000Z"
+    },
+    {
+      "id": "contact-4",
+      "name": "David Chen",
+      "email": "david@nexuspay.co",
+      "phone": "+1 (650) 412-8821",
+      "organizationId": "org-4",
+      "organizationName": "Nexus Pay",
+      "jobTitle": "Head of Product",
+      "source": "Partner",
+      "status": "Lead",
+      "owner": "Waleed Ahmad",
+      "tags": [
+        "Payments",
+        "API Integration",
+        "High Security"
+      ],
+      "notes": "Inquiry regarding secure checkout experience and custom client dashboard.",
+      "lastContactDate": "2026-04-18T10:15:00.000Z",
+      "nextFollowUp": "2026-04-25T11:00:00.000Z",
+      "createdAt": "2026-04-15T11:00:00.000Z",
+      "updatedAt": "2026-04-18T10:20:00.000Z"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "org-1",
+      "name": "Veritas Labs",
+      "website": "https://veritaslabs.example.com",
+      "industry": "Financial Technology",
+      "tier": "Enterprise",
+      "relationshipStatus": "Active Client",
+      "owner": "Taha Shah",
+      "notes": "Long-term client. 2 projects shipped to date.",
+      "createdAt": "2025-08-10T10:00:00.000Z",
+      "updatedAt": "2026-02-10T14:30:00.000Z"
+    },
+    {
+      "id": "org-2",
+      "name": "Meridian AI",
+      "website": "https://meridianai.example.com",
+      "industry": "Artificial Intelligence",
+      "tier": "Startup",
+      "relationshipStatus": "Active Client",
+      "owner": "Zeeshan Aftab",
+      "notes": "Series A funded. Fast-paced, high quality requirements.",
+      "createdAt": "2025-10-01T10:00:00.000Z",
+      "updatedAt": "2026-03-01T11:30:00.000Z"
+    },
+    {
+      "id": "org-3",
+      "name": "Synapse Flow",
+      "website": "https://synapseflow.example.com",
+      "industry": "Developer Tools / SaaS",
+      "tier": "Mid-Market",
+      "relationshipStatus": "Prospect",
+      "owner": "Yousaf Safeer",
+      "notes": "Proposal pending review by leadership board.",
+      "createdAt": "2026-04-10T08:30:00.000Z",
+      "updatedAt": "2026-04-12T16:15:00.000Z"
+    },
+    {
+      "id": "org-4",
+      "name": "Nexus Pay",
+      "website": "https://nexuspay.example.com",
+      "industry": "FinTech / Payments",
+      "tier": "Mid-Market",
+      "relationshipStatus": "Prospect",
+      "owner": "Waleed Ahmad",
+      "notes": "Initial technical discovery completed.",
+      "createdAt": "2026-04-15T11:00:00.000Z",
+      "updatedAt": "2026-04-18T10:20:00.000Z"
+    }
+  ],
+  "leads": [
+    {
+      "title": "dsf",
+      "contactName": "sdf",
+      "organizationName": "fasd",
+      "stage": "qualified",
+      "value": 25000,
+      "probability": 30,
+      "owner": "Taha Shah",
+      "expectedCloseDate": "2026-11-19",
+      "notes": "sdf",
+      "id": "lead-1792503267621",
+      "createdAt": "2026-10-20T13:34:27.621Z",
+      "updatedAt": "2026-10-20T13:34:35.873Z"
+    },
+    {
+      "id": "lead-1",
+      "title": "Synapse Flow Design System & App Architecture",
+      "contactId": "contact-3",
+      "contactName": "Elena Rostova",
+      "organizationName": "Synapse Flow",
+      "stage": "proposal",
+      "value": 38000,
+      "probability": 75,
+      "source": "Website Inquiry",
+      "owner": "Yousaf Safeer",
+      "expectedCloseDate": "2026-05-15",
+      "notes": "Full design overhaul, component tokenization, Next.js implementation.",
+      "createdAt": "2026-04-10T09:00:00.000Z",
+      "updatedAt": "2026-04-16T14:20:00.000Z"
+    },
+    {
+      "id": "lead-2",
+      "title": "Nexus Pay Real-Time Checkout Experience",
+      "contactId": "contact-4",
+      "contactName": "David Chen",
+      "organizationName": "Nexus Pay",
+      "stage": "negotiation",
+      "value": 45000,
+      "probability": 50,
+      "source": "Partner Referral",
+      "owner": "Waleed Ahmad",
+      "expectedCloseDate": "2026-05-30",
+      "notes": "Security-critical payment gateway frontend + API orchestration layer.",
+      "createdAt": "2026-04-15T11:30:00.000Z",
+      "updatedAt": "2026-10-20T13:34:48.396Z"
+    },
+    {
+      "id": "lead-3",
+      "title": "Veritas Labs Multi-Region Expansion",
+      "contactId": "contact-1",
+      "contactName": "Sarah Mitchell",
+      "organizationName": "Veritas Labs",
+      "stage": "won",
+      "value": 52000,
+      "probability": 90,
+      "source": "Existing Client",
+      "owner": "Taha Shah",
+      "expectedCloseDate": "2026-05-01",
+      "notes": "Contract revisions in progress. Expected signature by month end.",
+      "createdAt": "2026-03-20T10:00:00.000Z",
+      "updatedAt": "2026-10-20T13:34:51.354Z"
+    },
+    {
+      "id": "lead-4",
+      "title": "Meridian AI Interactive 3D Showcase (Phase 2)",
+      "contactId": "contact-2",
+      "contactName": "James Okafor",
+      "organizationName": "Meridian AI",
+      "stage": "lost",
+      "value": 30000,
+      "probability": 100,
+      "source": "Existing Client",
+      "owner": "Zeeshan Aftab",
+      "expectedCloseDate": "2026-03-25",
+      "notes": "Won and kicked off. Currently in development stage.",
+      "createdAt": "2026-02-15T10:00:00.000Z",
+      "updatedAt": "2026-10-20T13:34:56.059Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task-1",
+      "title": "Send updated scope revision to Elena Rostova",
+      "description": "Include milestones for mobile responsive testing and design handover.",
+      "assignee": "Yousaf Safeer",
+      "relatedType": "lead",
+      "relatedId": "lead-1",
+      "relatedName": "Synapse Flow Design System",
+      "priority": "high",
+      "status": "pending",
+      "dueDate": "2026-04-22T17:00:00.000Z",
+      "createdAt": "2026-04-16T14:30:00.000Z"
+    },
+    {
+      "id": "task-2",
+      "title": "Review API security requirements with Nexus Pay team",
+      "description": "Align on token authentication and rate limit tolerances.",
+      "assignee": "Waleed Ahmad",
+      "relatedType": "lead",
+      "relatedId": "lead-2",
+      "relatedName": "Nexus Pay Real-Time Checkout",
+      "priority": "urgent",
+      "status": "pending",
+      "dueDate": "2026-04-24T12:00:00.000Z",
+      "createdAt": "2026-04-18T10:45:00.000Z"
+    },
+    {
+      "id": "task-3",
+      "title": "Prepare final contract addendum for Veritas Labs",
+      "description": "Finalize deliverable timeline and multi-region SLAs.",
+      "assignee": "Taha Shah",
+      "relatedType": "lead",
+      "relatedId": "lead-3",
+      "relatedName": "Veritas Labs Multi-Region Expansion",
+      "priority": "high",
+      "status": "in_progress",
+      "dueDate": "2026-04-28T18:00:00.000Z",
+      "createdAt": "2026-04-15T09:00:00.000Z"
+    },
+    {
+      "id": "task-4",
+      "title": "Quality assurance audit on Meridian AI shader bundle",
+      "description": "Test WebGL context fallback on low-power devices.",
+      "assignee": "Faseeh ur Rehman",
+      "relatedType": "lead",
+      "relatedId": "lead-4",
+      "relatedName": "Meridian AI Interactive 3D Showcase",
+      "priority": "medium",
+      "status": "completed",
+      "dueDate": "2026-04-10T15:00:00.000Z",
+      "completedAt": "2026-04-09T16:20:00.000Z",
+      "createdAt": "2026-04-05T10:00:00.000Z"
+    }
+  ],
+  "activities": [
+    {
+      "id": "act-1792503296059",
+      "type": "stage_change",
+      "title": "Moved to LOST",
+      "description": "Pipeline stage changed from won to lost",
+      "relatedType": "lead",
+      "relatedId": "lead-4",
+      "relatedName": "Meridian AI Interactive 3D Showcase (Phase 2)",
+      "author": "Team",
+      "timestamp": "2026-10-20T13:34:56.059Z"
+    },
+    {
+      "id": "act-1792503291354",
+      "type": "stage_change",
+      "title": "Moved to WON",
+      "description": "Pipeline stage changed from negotiation to won",
+      "relatedType": "lead",
+      "relatedId": "lead-3",
+      "relatedName": "Veritas Labs Multi-Region Expansion",
+      "author": "Team",
+      "timestamp": "2026-10-20T13:34:51.354Z"
+    },
+    {
+      "id": "act-1792503288396",
+      "type": "stage_change",
+      "title": "Moved to NEGOTIATION",
+      "description": "Pipeline stage changed from proposal to negotiation",
+      "relatedType": "lead",
+      "relatedId": "lead-2",
+      "relatedName": "Nexus Pay Real-Time Checkout Experience",
+      "author": "Team",
+      "timestamp": "2026-10-20T13:34:48.396Z"
+    },
+    {
+      "id": "act-1792503285446",
+      "type": "stage_change",
+      "title": "Moved to PROPOSAL",
+      "description": "Pipeline stage changed from contacted to proposal",
+      "relatedType": "lead",
+      "relatedId": "lead-2",
+      "relatedName": "Nexus Pay Real-Time Checkout Experience",
+      "author": "Team",
+      "timestamp": "2026-10-20T13:34:45.446Z"
+    },
+    {
+      "id": "act-1792503283169",
+      "type": "stage_change",
+      "title": "Moved to CONTACTED",
+      "description": "Pipeline stage changed from qualified to contacted",
+      "relatedType": "lead",
+      "relatedId": "lead-2",
+      "relatedName": "Nexus Pay Real-Time Checkout Experience",
+      "author": "Team",
+      "timestamp": "2026-10-20T13:34:43.169Z"
+    },
+    {
+      "id": "act-1792503275873",
+      "type": "stage_change",
+      "title": "Moved to QUALIFIED",
+      "description": "Pipeline stage changed from contacted to qualified",
+      "relatedType": "lead",
+      "relatedId": "lead-1792503267621",
+      "relatedName": "dsf",
+      "author": "Team",
+      "timestamp": "2026-10-20T13:34:35.873Z"
+    },
+    {
+      "id": "act-1792503271996",
+      "type": "stage_change",
+      "title": "Moved to CONTACTED",
+      "description": "Pipeline stage changed from new to contacted",
+      "relatedType": "lead",
+      "relatedId": "lead-1792503267621",
+      "relatedName": "dsf",
+      "author": "Team",
+      "timestamp": "2026-10-20T13:34:31.996Z"
+    },
+    {
+      "id": "act-1",
+      "type": "meeting",
+      "title": "Technical Discovery Call",
+      "description": "Discussed technical constraints and API requirements with David Chen.",
+      "relatedType": "lead",
+      "relatedId": "lead-2",
+      "relatedName": "Nexus Pay Real-Time Checkout",
+      "author": "Waleed Ahmad",
+      "timestamp": "2026-04-18T10:15:00.000Z"
+    },
+    {
+      "id": "act-2",
+      "type": "proposal",
+      "title": "Submitted Proposal v1.0",
+      "description": "Sent detailed SOW and project budget ($38,000) to Elena Rostova.",
+      "relatedType": "lead",
+      "relatedId": "lead-1",
+      "relatedName": "Synapse Flow Design System",
+      "author": "Yousaf Safeer",
+      "timestamp": "2026-04-16T14:00:00.000Z"
+    },
+    {
+      "id": "act-3",
+      "type": "stage_change",
+      "title": "Lead Won & Approved",
+      "description": "Meridian AI Phase 2 approved and deposited. Moved to WON stage.",
+      "relatedType": "lead",
+      "relatedId": "lead-4",
+      "relatedName": "Meridian AI Phase 2",
+      "author": "Zeeshan Aftab",
+      "timestamp": "2026-03-25T11:00:00.000Z"
+    }
+  ],
+  "proposals": [
+    {
+      "id": "prop-1",
+      "title": "Synapse Flow Design System & App Architecture",
+      "leadId": "lead-1",
+      "organizationName": "Synapse Flow",
+      "contactName": "Elena Rostova",
+      "scope": "Comprehensive brand tokenization, 35 React components, full Storybook documentation, and Next.js frontend integration.",
+      "value": 38000,
+      "status": "sent",
+      "validUntil": "2026-05-15",
+      "sentAt": "2026-04-16T14:00:00.000Z",
+      "createdAt": "2026-04-16T12:00:00.000Z"
+    },
+    {
+      "id": "prop-2",
+      "title": "Veritas Labs Multi-Region Scaling SLA",
+      "leadId": "lead-3",
+      "organizationName": "Veritas Labs",
+      "contactName": "Sarah Mitchell",
+      "scope": "High-availability edge routing, custom caching layer, real-time analytics dashboards.",
+      "value": 52000,
+      "status": "under_review",
+      "validUntil": "2026-05-01",
+      "sentAt": "2026-04-12T10:00:00.000Z",
+      "createdAt": "2026-04-11T16:00:00.000Z"
+    }
+  ],
+  "auditLog": [
+    {
+      "id": "audit-1792503296059-tk0q",
+      "action": "UPDATE",
+      "entityType": "Lead",
+      "entityId": "lead-4",
+      "performedBy": "Admin",
+      "details": "Updated lead Meridian AI Interactive 3D Showcase (Phase 2)",
+      "timestamp": "2026-10-20T13:34:56.059Z"
+    },
+    {
+      "id": "audit-1792503291354-44dk",
+      "action": "UPDATE",
+      "entityType": "Lead",
+      "entityId": "lead-3",
+      "performedBy": "Admin",
+      "details": "Updated lead Veritas Labs Multi-Region Expansion",
+      "timestamp": "2026-10-20T13:34:51.354Z"
+    },
+    {
+      "id": "audit-1792503288396-glfc",
+      "action": "UPDATE",
+      "entityType": "Lead",
+      "entityId": "lead-2",
+      "performedBy": "Admin",
+      "details": "Updated lead Nexus Pay Real-Time Checkout Experience",
+      "timestamp": "2026-10-20T13:34:48.396Z"
+    },
+    {
+      "id": "audit-1792503285446-t8g6",
+      "action": "UPDATE",
+      "entityType": "Lead",
+      "entityId": "lead-2",
+      "performedBy": "Admin",
+      "details": "Updated lead Nexus Pay Real-Time Checkout Experience",
+      "timestamp": "2026-10-20T13:34:45.446Z"
+    },
+    {
+      "id": "audit-1792503283169-lap1",
+      "action": "UPDATE",
+      "entityType": "Lead",
+      "entityId": "lead-2",
+      "performedBy": "Admin",
+      "details": "Updated lead Nexus Pay Real-Time Checkout Experience",
+      "timestamp": "2026-10-20T13:34:43.169Z"
+    },
+    {
+      "id": "audit-1792503275873-74j8",
+      "action": "UPDATE",
+      "entityType": "Lead",
+      "entityId": "lead-1792503267621",
+      "performedBy": "Admin",
+      "details": "Updated lead dsf",
+      "timestamp": "2026-10-20T13:34:35.873Z"
+    },
+    {
+      "id": "audit-1792503271996-v769",
+      "action": "UPDATE",
+      "entityType": "Lead",
+      "entityId": "lead-1792503267621",
+      "performedBy": "Admin",
+      "details": "Updated lead dsf",
+      "timestamp": "2026-10-20T13:34:31.996Z"
+    },
+    {
+      "id": "audit-1792503267621-u66n",
+      "action": "CREATE",
+      "entityType": "Lead",
+      "entityId": "lead-1792503267621",
+      "performedBy": "Admin",
+      "details": "Created lead dsf ($25000)",
+      "timestamp": "2026-10-20T13:34:27.621Z"
+    },
+    {
+      "id": "audit-init-1",
+      "action": "CREATE",
+      "entityType": "Lead",
+      "entityId": "lead-1",
+      "performedBy": "Yousaf Safeer",
+      "details": "Created lead for Synapse Flow ($38,000)",
+      "timestamp": "2026-04-10T09:00:00.000Z"
+    },
+    {
+      "id": "audit-init-2",
+      "action": "CREATE",
+      "entityType": "Proposal",
+      "entityId": "prop-1",
+      "performedBy": "Yousaf Safeer",
+      "details": "Generated proposal for Synapse Flow",
+      "timestamp": "2026-04-16T12:00:00.000Z"
+    }
+  ]
+}
