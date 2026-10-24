@@ -22,11 +22,61 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 
+import { Suspense } from "react";
 import { connection } from "next/server";
 
 export const metadata: Metadata = { title: "Dashboard — QUANTA Admin" };
 
-export default async function AdminDashboard() {
+function DashboardSkeleton() {
+  return (
+    <div style={{ opacity: 0.7 }}>
+      <div className="admin-stats-grid">
+        {Array.from({ length: 8 }).map((_, i) => (
+          <div key={i} className="admin-stat-card" style={{ minHeight: 90, animation: "pulse 1.5s infinite" }}>
+            <div style={{ height: 16, width: 16, background: "var(--admin-border)", borderRadius: 4, marginBottom: 12 }} />
+            <div style={{ height: 24, width: "60%", background: "var(--admin-border)", borderRadius: 4, marginBottom: 8 }} />
+            <div style={{ height: 12, width: "40%", background: "var(--admin-border)", borderRadius: 4 }} />
+          </div>
+        ))}
+      </div>
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20, marginTop: 20 }}>
+        <div className="admin-card" style={{ height: 220, background: "var(--admin-surface)", border: "1px solid var(--admin-border)" }} />
+        <div className="admin-card" style={{ height: 220, background: "var(--admin-surface)", border: "1px solid var(--admin-border)" }} />
+      </div>
+    </div>
+  );
+}
+
+export default function AdminDashboard() {
+  return (
+    <div>
+      <div className="admin-page-header">
+        <div>
+          <h1 className="admin-page-title">Studio Operations Dashboard</h1>
+          <p className="admin-page-sub">
+            Real-time status across projects, verified client reviews, CRM pipeline, and site content.
+          </p>
+        </div>
+        <div className="admin-actions">
+          <Link href="/admin/settings" className="admin-btn admin-btn-ghost admin-btn-sm">
+            <Zap size={14} /> Global Settings
+          </Link>
+          <Link href="/admin/crm" className="admin-btn admin-btn-primary admin-btn-sm">
+            <Briefcase size={14} /> Open CRM Pipeline
+          </Link>
+        </div>
+      </div>
+
+      <div className="admin-content">
+        <Suspense fallback={<DashboardSkeleton />}>
+          <DashboardContent />
+        </Suspense>
+      </div>
+    </div>
+  );
+}
+
+async function DashboardContent() {
   await connection();
   const team = readJSON<TeamMember[]>("team.json");
   const projects = readJSON<Project[]>("projects.json");
@@ -119,25 +169,7 @@ export default async function AdminDashboard() {
   const pendingTasks = allTasks.filter((t) => t.status !== "completed").slice(0, 4);
 
   return (
-    <div>
-      <div className="admin-page-header">
-        <div>
-          <h1 className="admin-page-title">Studio Operations Dashboard</h1>
-          <p className="admin-page-sub">
-            Real-time status across projects, verified client reviews, CRM pipeline, and site content.
-          </p>
-        </div>
-        <div className="admin-actions">
-          <Link href="/admin/settings" className="admin-btn admin-btn-ghost admin-btn-sm">
-            <Zap size={14} /> Global Settings
-          </Link>
-          <Link href="/admin/crm" className="admin-btn admin-btn-primary admin-btn-sm">
-            <Briefcase size={14} /> Open CRM Pipeline
-          </Link>
-        </div>
-      </div>
-
-      <div className="admin-content">
+    <>
         {/* Urgent Action Banners */}
         {messageStats.unread > 0 && (
           <div
@@ -372,7 +404,6 @@ export default async function AdminDashboard() {
             ))}
           </div>
         </div>
-      </div>
-    </div>
-  );
-}
+      </>
+    );
+  }

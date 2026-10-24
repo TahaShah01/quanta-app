@@ -7,7 +7,7 @@
       "organizationName": "dgfrs",
       "jobTitle": "Prospective Client",
       "source": "Website Inquiry",
-      "status": "Lead",
+      "status": "Active Client",
       "owner": "Taha Shah",
       "tags": [
         "Website Lead",
@@ -18,7 +18,7 @@
       "nextFollowUp": "2026-10-21T16:25:10.209Z",
       "id": "contact-1792513510209",
       "createdAt": "2026-10-20T16:25:10.209Z",
-      "updatedAt": "2026-10-20T16:25:10.209Z"
+      "updatedAt": "2026-10-24T12:08:25.580Z"
     },
     {
       "id": "contact-1",
@@ -73,7 +73,7 @@
       "organizationName": "Synapse Flow",
       "jobTitle": "VP Design",
       "source": "Website Inquiry",
-      "status": "Lead",
+      "status": "Active Client",
       "owner": "Yousaf Safeer",
       "tags": [
         "Design System",
@@ -84,7 +84,7 @@
       "lastContactDate": "2026-04-12T16:00:00.000Z",
       "nextFollowUp": "2026-04-22T15:00:00.000Z",
       "createdAt": "2026-04-10T08:30:00.000Z",
-      "updatedAt": "2026-04-12T16:15:00.000Z"
+      "updatedAt": "2026-10-24T12:05:15.652Z"
     },
     {
       "id": "contact-4",
@@ -95,7 +95,7 @@
       "organizationName": "Nexus Pay",
       "jobTitle": "Head of Product",
       "source": "Partner",
-      "status": "Lead",
+      "status": "Active Client",
       "owner": "Waleed Ahmad",
       "tags": [
         "Payments",
@@ -106,7 +106,7 @@
       "lastContactDate": "2026-04-18T10:15:00.000Z",
       "nextFollowUp": "2026-04-25T11:00:00.000Z",
       "createdAt": "2026-04-15T11:00:00.000Z",
-      "updatedAt": "2026-04-18T10:20:00.000Z"
+      "updatedAt": "2026-10-24T12:08:35.091Z"
     }
   ],
   "organizations": [
@@ -165,7 +165,7 @@
       "contactId": "contact-1792513510209",
       "contactName": "Taha Shah",
       "organizationName": "gfh",
-      "stage": "new",
+      "stage": "won",
       "value": 515,
       "probability": 25,
       "source": "Website Form",
@@ -174,14 +174,14 @@
       "notes": "drfhgdgvcx",
       "id": "lead-1792515022720",
       "createdAt": "2026-10-20T16:50:22.720Z",
-      "updatedAt": "2026-10-20T16:50:22.720Z"
+      "updatedAt": "2026-10-24T12:31:28.813Z"
     },
     {
       "title": "dgfrs — Inbound Project Inquiry",
       "contactId": "contact-1792513510209",
       "contactName": "Taha Shah",
       "organizationName": "dgfrs",
-      "stage": "new",
+      "stage": "won",
       "value": 1550,
       "probability": 25,
       "source": "Website Form",
@@ -190,21 +190,7 @@
       "notes": "sdgrd",
       "id": "lead-1792513510212",
       "createdAt": "2026-10-20T16:25:10.212Z",
-      "updatedAt": "2026-10-20T16:25:10.212Z"
-    },
-    {
-      "title": "dsf",
-      "contactName": "sdf",
-      "organizationName": "fasd",
-      "stage": "qualified",
-      "value": 25000,
-      "probability": 30,
-      "owner": "Taha Shah",
-      "expectedCloseDate": "2026-11-19",
-      "notes": "sdf",
-      "id": "lead-1792503267621",
-      "createdAt": "2026-10-20T13:34:27.621Z",
-      "updatedAt": "2026-10-20T13:34:35.873Z"
+      "updatedAt": "2026-10-24T12:06:11.663Z"
     },
     {
       "id": "lead-1",
@@ -212,7 +198,7 @@
       "contactId": "contact-3",
       "contactName": "Elena Rostova",
       "organizationName": "Synapse Flow",
-      "stage": "proposal",
+      "stage": "won",
       "value": 38000,
       "probability": 75,
       "source": "Website Inquiry",
@@ -220,7 +206,7 @@
       "expectedCloseDate": "2026-05-15",
       "notes": "Full design overhaul, component tokenization, Next.js implementation.",
       "createdAt": "2026-04-10T09:00:00.000Z",
-      "updatedAt": "2026-04-16T14:20:00.000Z"
+      "updatedAt": "2026-10-24T12:31:39.251Z"
     },
     {
       "id": "lead-2",
@@ -228,7 +214,7 @@
       "contactId": "contact-4",
       "contactName": "David Chen",
       "organizationName": "Nexus Pay",
-      "stage": "negotiation",
+      "stage": "won",
       "value": 45000,
       "probability": 50,
       "source": "Partner Referral",
@@ -236,7 +222,7 @@
       "expectedCloseDate": "2026-05-30",
       "notes": "Security-critical payment gateway frontend + API orchestration layer.",
       "createdAt": "2026-04-15T11:30:00.000Z",
-      "updatedAt": "2026-10-20T13:34:48.396Z"
+      "updatedAt": "2026-10-24T12:31:57.676Z"
     },
     {
       "id": "lead-3",
@@ -273,6 +259,19 @@
   ],
   "tasks": [
     {
+      "title": "Client Request: Test Build",
+      "description": "From Taha Shah (Quanta Studio Client):\nBah Bah Bah",
+      "assignee": "Taha Shah",
+      "relatedType": "project",
+      "relatedName": "Next-Gen Web Platform",
+      "priority": "high",
+      "status": "completed",
+      "dueDate": "2026-10-25",
+      "id": "task-1792843057749",
+      "createdAt": "2026-10-24T11:57:37.749Z",
+      "completedAt": "2026-10-24T12:15:37.749Z"
+    },
+    {
       "title": "Respond to website inquiry: Taha Shah (gfh)",
       "description": "Inquiry details:\nEmail: don.tahashah@gmail.com\nBudget: $5K – $15K\nMessage:\ndrfhgdgvcx",
       "assignee": "Taha Shah",
@@ -280,10 +279,11 @@
       "relatedId": "lead-1792515022720",
       "relatedName": "gfh — Inbound Project Inquiry",
       "priority": "high",
-      "status": "pending",
+      "status": "completed",
       "dueDate": "2026-10-21T16:50:22.721Z",
       "id": "task-1792515022722",
-      "createdAt": "2026-10-20T16:50:22.722Z"
+      "createdAt": "2026-10-20T16:50:22.722Z",
+      "completedAt": "2026-10-24T12:15:23.900Z"
     },
     {
       "title": "Respond to website inquiry: Taha Shah (dgfrs)",
@@ -293,10 +293,11 @@
       "relatedId": "lead-1792513510212",
       "relatedName": "dgfrs — Inbound Project Inquiry",
       "priority": "high",
-      "status": "pending",
+      "status": "completed",
       "dueDate": "2026-10-21T16:25:10.213Z",
       "id": "task-1792513510214",
-      "createdAt": "2026-10-20T16:25:10.214Z"
+      "createdAt": "2026-10-20T16:25:10.214Z",
+      "completedAt": "2026-10-24T12:15:27.754Z"
     },
     {
       "id": "task-1",
@@ -307,9 +308,10 @@
       "relatedId": "lead-1",
       "relatedName": "Synapse Flow Design System",
       "priority": "high",
-      "status": "pending",
+      "status": "completed",
       "dueDate": "2026-04-22T17:00:00.000Z",
-      "createdAt": "2026-04-16T14:30:00.000Z"
+      "createdAt": "2026-04-16T14:30:00.000Z",
+      "completedAt": "2026-10-24T12:15:29.514Z"
     },
     {
       "id": "task-2",
@@ -320,9 +322,10 @@
       "relatedId": "lead-2",
       "relatedName": "Nexus Pay Real-Time Checkout",
       "priority": "urgent",
-      "status": "pending",
+      "status": "completed",
       "dueDate": "2026-04-24T12:00:00.000Z",
-      "createdAt": "2026-04-18T10:45:00.000Z"
+      "createdAt": "2026-04-18T10:45:00.000Z",
+      "completedAt": "2026-10-24T12:15:31.300Z"
     },
     {
       "id": "task-3",
@@ -333,15 +336,16 @@
       "relatedId": "lead-3",
       "relatedName": "Veritas Labs Multi-Region Expansion",
       "priority": "high",
-      "status": "in_progress",
+      "status": "completed",
       "dueDate": "2026-04-28T18:00:00.000Z",
-      "createdAt": "2026-04-15T09:00:00.000Z"
+      "createdAt": "2026-04-15T09:00:00.000Z",
+      "completedAt": "2026-10-24T12:15:34.550Z"
     },
     {
       "id": "task-4",
       "title": "Quality assurance audit on Meridian AI shader bundle",
       "description": "Test WebGL context fallback on low-power devices.",
-      "assignee": "Faseeh ur Rehman",
+      "assignee": "Faseeh Ur Rahman",
       "relatedType": "lead",
       "relatedId": "lead-4",
       "relatedName": "Meridian AI Interactive 3D Showcase",
@@ -353,6 +357,276 @@
     }
   ],
   "activities": [
+    {
+      "type": "stage_change",
+      "title": "Project Status: DESIGN",
+      "description": "Project \"Nexus Pay Real-Time Checkout Experience\" status changed from planning to design.",
+      "relatedType": "organization",
+      "relatedName": "Nexus Pay",
+      "author": "Team",
+      "id": "act-1792845143778",
+      "timestamp": "2026-10-24T12:32:23.778Z"
+    },
+    {
+      "type": "stage_change",
+      "title": "Project Status: PLANNING",
+      "description": "Project \"Nexus Pay Real-Time Checkout Experience\" status changed from testing to planning.",
+      "relatedType": "organization",
+      "relatedName": "Nexus Pay",
+      "author": "Team",
+      "id": "act-1792845136731",
+      "timestamp": "2026-10-24T12:32:16.731Z"
+    },
+    {
+      "type": "stage_change",
+      "title": "Project Status: TESTING",
+      "description": "Project \"Nexus Pay Real-Time Checkout Experience\" status changed from planning to testing.",
+      "relatedType": "organization",
+      "relatedName": "Nexus Pay",
+      "author": "Team",
+      "id": "act-1792845132594",
+      "timestamp": "2026-10-24T12:32:12.594Z"
+    },
+    {
+      "type": "stage_change",
+      "title": "Project Status: PLANNING",
+      "description": "Project \"Nexus Pay Real-Time Checkout Experience\" status changed from development to planning.",
+      "relatedType": "organization",
+      "relatedName": "Nexus Pay",
+      "author": "Team",
+      "id": "act-1792845122990",
+      "timestamp": "2026-10-24T12:32:02.990Z"
+    },
+    {
+      "type": "stage_change",
+      "title": "Deal Won & Project Launched: Nexus Pay Real-Time Checkout Experience",
+      "description": "Lead converted to active delivery project with client portal access (david@nexuspay.co).",
+      "relatedType": "lead",
+      "relatedId": "lead-2",
+      "relatedName": "Nexus Pay Real-Time Checkout Experience",
+      "author": "Quanta Team",
+      "id": "act-1792845117723",
+      "timestamp": "2026-10-24T12:31:57.723Z"
+    },
+    {
+      "type": "stage_change",
+      "title": "Deal Won & Project Launched: Synapse Flow Design System & App Architecture",
+      "description": "Lead converted to active delivery project with client portal access (elena@synapseflow.com).",
+      "relatedType": "lead",
+      "relatedId": "lead-1",
+      "relatedName": "Synapse Flow Design System & App Architecture",
+      "author": "Quanta Team",
+      "id": "act-1792845099297",
+      "timestamp": "2026-10-24T12:31:39.297Z"
+    },
+    {
+      "type": "stage_change",
+      "title": "Deal Won & Project Launched: gfh — Inbound Project Inquiry",
+      "description": "Lead converted to active delivery project with client portal access (don.tahashah@gmail.com).",
+      "relatedType": "lead",
+      "relatedId": "lead-1792515022720",
+      "relatedName": "gfh — Inbound Project Inquiry",
+      "author": "Quanta Team",
+      "id": "act-1792845088818",
+      "timestamp": "2026-10-24T12:31:28.818Z"
+    },
+    {
+      "type": "stage_change",
+      "title": "Project Status: COMPLETED",
+      "description": "Project \"Next-Gen Web Platform\" status changed from on-hold to completed. Client review workflow now unlocked.",
+      "relatedType": "organization",
+      "relatedName": "Quanta Studio Client",
+      "author": "Team",
+      "id": "act-1792843814773",
+      "timestamp": "2026-10-24T12:10:14.773Z"
+    },
+    {
+      "type": "stage_change",
+      "title": "Project Status: ON-HOLD",
+      "description": "Project \"Next-Gen Web Platform\" status changed from completed to on-hold.",
+      "relatedType": "organization",
+      "relatedName": "Quanta Studio Client",
+      "author": "Team",
+      "id": "act-1792843812695",
+      "timestamp": "2026-10-24T12:10:12.695Z"
+    },
+    {
+      "id": "act-1792843686482",
+      "type": "stage_change",
+      "title": "Moved to WON",
+      "description": "Pipeline stage changed from negotiation to won",
+      "relatedType": "lead",
+      "relatedId": "lead-2",
+      "relatedName": "Nexus Pay Real-Time Checkout Experience",
+      "author": "Team",
+      "timestamp": "2026-10-24T12:08:06.482Z"
+    },
+    {
+      "id": "act-1792843684012",
+      "type": "stage_change",
+      "title": "Moved to WON",
+      "description": "Pipeline stage changed from negotiation to won",
+      "relatedType": "lead",
+      "relatedId": "lead-1",
+      "relatedName": "Synapse Flow Design System & App Architecture",
+      "author": "Team",
+      "timestamp": "2026-10-24T12:08:04.012Z"
+    },
+    {
+      "id": "act-1792843680827",
+      "type": "stage_change",
+      "title": "Moved to NEGOTIATION",
+      "description": "Pipeline stage changed from proposal to negotiation",
+      "relatedType": "lead",
+      "relatedId": "lead-1",
+      "relatedName": "Synapse Flow Design System & App Architecture",
+      "author": "Team",
+      "timestamp": "2026-10-24T12:08:00.827Z"
+    },
+    {
+      "id": "act-1792843675130",
+      "type": "stage_change",
+      "title": "Moved to LOST",
+      "description": "Pipeline stage changed from qualified to lost",
+      "relatedType": "lead",
+      "relatedId": "lead-1792503267621",
+      "relatedName": "dsf",
+      "author": "Team",
+      "timestamp": "2026-10-24T12:07:55.130Z"
+    },
+    {
+      "type": "stage_change",
+      "title": "Project Status: COMPLETED",
+      "description": "Project \"Next-Gen Web Platform\" status changed from planning to completed. Client review workflow now unlocked.",
+      "relatedType": "organization",
+      "relatedName": "Quanta Studio Client",
+      "author": "Team",
+      "id": "act-1792843605361",
+      "timestamp": "2026-10-24T12:06:45.361Z"
+    },
+    {
+      "type": "stage_change",
+      "title": "Project Status: PLANNING",
+      "description": "Project \"Next-Gen Web Platform\" status changed from testing to planning.",
+      "relatedType": "organization",
+      "relatedName": "Quanta Studio Client",
+      "author": "Team",
+      "id": "act-1792843591916",
+      "timestamp": "2026-10-24T12:06:31.916Z"
+    },
+    {
+      "type": "stage_change",
+      "title": "Project Status: TESTING",
+      "description": "Project \"Next-Gen Web Platform\" status changed from development to testing.",
+      "relatedType": "organization",
+      "relatedName": "Quanta Studio Client",
+      "author": "Team",
+      "id": "act-1792843584409",
+      "timestamp": "2026-10-24T12:06:24.409Z"
+    },
+    {
+      "type": "stage_change",
+      "title": "Deal Won & Project Launched: gfh — Inbound Project Inquiry",
+      "description": "Lead converted to active delivery project with client portal access (don.tahashah@gmail.com).",
+      "relatedType": "lead",
+      "relatedId": "lead-1792515022720",
+      "relatedName": "gfh — Inbound Project Inquiry",
+      "author": "Quanta Team",
+      "id": "act-1792843578914",
+      "timestamp": "2026-10-24T12:06:18.914Z"
+    },
+    {
+      "id": "act-1792843571663",
+      "type": "stage_change",
+      "title": "Moved to WON",
+      "description": "Pipeline stage changed from new to won",
+      "relatedType": "lead",
+      "relatedId": "lead-1792513510212",
+      "relatedName": "dgfrs — Inbound Project Inquiry",
+      "author": "Team",
+      "timestamp": "2026-10-24T12:06:11.663Z"
+    },
+    {
+      "id": "act-1792843565641",
+      "type": "stage_change",
+      "title": "Moved to WON",
+      "description": "Pipeline stage changed from new to won",
+      "relatedType": "lead",
+      "relatedId": "lead-1792515022720",
+      "relatedName": "gfh — Inbound Project Inquiry",
+      "author": "Team",
+      "timestamp": "2026-10-24T12:06:05.641Z"
+    },
+    {
+      "type": "inquiry",
+      "title": "New Client Inquiry: Test Build",
+      "description": "Client message received via portal: \"Bah Bah Bah\"",
+      "relatedType": "organization",
+      "relatedName": "Quanta Studio Client",
+      "author": "Taha Shah",
+      "id": "act-1792843057756",
+      "timestamp": "2026-10-24T11:57:37.756Z"
+    },
+    {
+      "type": "note",
+      "title": "Client Task Completed",
+      "description": "Client Taha Shah marked action item 'Review Release Candidate 1 Architecture Spec' as Completed.",
+      "relatedType": "organization",
+      "relatedName": "Quanta Studio Client",
+      "author": "Taha Shah",
+      "id": "act-1792843033838",
+      "timestamp": "2026-10-24T11:57:13.838Z"
+    },
+    {
+      "type": "note",
+      "title": "Client Task Completed",
+      "description": "Client Taha Shah marked action item 'Provide Brand Guidelines & Production Asset Kit' as Completed.",
+      "relatedType": "organization",
+      "relatedName": "Quanta Studio Client",
+      "author": "Taha Shah",
+      "id": "act-1792843033089",
+      "timestamp": "2026-10-24T11:57:13.089Z"
+    },
+    {
+      "type": "note",
+      "title": "Client Task Reopened",
+      "description": "Client Taha Shah marked action item 'Provide Brand Guidelines & Production Asset Kit' as In Progress.",
+      "relatedType": "organization",
+      "relatedName": "Quanta Studio Client",
+      "author": "Taha Shah",
+      "id": "act-1792843032076",
+      "timestamp": "2026-10-24T11:57:12.076Z"
+    },
+    {
+      "type": "note",
+      "title": "Client Task Reopened",
+      "description": "Client Taha Shah marked action item 'Review Release Candidate 1 Architecture Spec' as In Progress.",
+      "relatedType": "organization",
+      "relatedName": "Quanta Studio Client",
+      "author": "Taha Shah",
+      "id": "act-1792843031342",
+      "timestamp": "2026-10-24T11:57:11.342Z"
+    },
+    {
+      "type": "note",
+      "title": "Client Task Completed",
+      "description": "Client Taha Shah marked action item 'Review Release Candidate 1 Architecture Spec' as Completed.",
+      "relatedType": "organization",
+      "relatedName": "Quanta Studio Client",
+      "author": "Taha Shah",
+      "id": "act-1792843029766",
+      "timestamp": "2026-10-24T11:57:09.766Z"
+    },
+    {
+      "type": "note",
+      "title": "Deliverable Approved by Client",
+      "description": "Client Taha Shah (Quanta Studio Client) marked 'Interactive Design System Specification' as approved. Feedback: \"Good.\"",
+      "relatedType": "organization",
+      "relatedName": "Quanta Studio Client",
+      "author": "Taha Shah",
+      "id": "act-1792842906651",
+      "timestamp": "2026-10-24T11:55:06.651Z"
+    },
     {
       "type": "inquiry",
       "title": "Website Contact Form Submitted",
@@ -515,6 +789,204 @@
     }
   ],
   "auditLog": [
+    {
+      "id": "audit-1792845117676-co4e",
+      "action": "UPDATE",
+      "entityType": "Lead",
+      "entityId": "lead-2",
+      "performedBy": "Admin",
+      "details": "Updated lead Nexus Pay Real-Time Checkout Experience",
+      "timestamp": "2026-10-24T12:31:57.676Z"
+    },
+    {
+      "id": "audit-1792845099251-7g0s",
+      "action": "UPDATE",
+      "entityType": "Lead",
+      "entityId": "lead-1",
+      "performedBy": "Admin",
+      "details": "Updated lead Synapse Flow Design System & App Architecture",
+      "timestamp": "2026-10-24T12:31:39.251Z"
+    },
+    {
+      "id": "audit-1792845088813-wrqe",
+      "action": "UPDATE",
+      "entityType": "Lead",
+      "entityId": "lead-1792515022720",
+      "performedBy": "Admin",
+      "details": "Updated lead gfh — Inbound Project Inquiry",
+      "timestamp": "2026-10-24T12:31:28.813Z"
+    },
+    {
+      "id": "audit-1792844137749-zsvo",
+      "action": "UPDATE",
+      "entityType": "Task",
+      "entityId": "task-1792843057749",
+      "performedBy": "Admin",
+      "details": "Toggled task \"Client Request: Test Build\" to completed",
+      "timestamp": "2026-10-24T12:15:37.749Z"
+    },
+    {
+      "id": "audit-1792844134550-ltuh",
+      "action": "UPDATE",
+      "entityType": "Task",
+      "entityId": "task-3",
+      "performedBy": "Admin",
+      "details": "Toggled task \"Prepare final contract addendum for Veritas Labs\" to completed",
+      "timestamp": "2026-10-24T12:15:34.550Z"
+    },
+    {
+      "id": "audit-1792844131300-hmwz",
+      "action": "UPDATE",
+      "entityType": "Task",
+      "entityId": "task-2",
+      "performedBy": "Admin",
+      "details": "Toggled task \"Review API security requirements with Nexus Pay team\" to completed",
+      "timestamp": "2026-10-24T12:15:31.300Z"
+    },
+    {
+      "id": "audit-1792844129514-mzgu",
+      "action": "UPDATE",
+      "entityType": "Task",
+      "entityId": "task-1",
+      "performedBy": "Admin",
+      "details": "Toggled task \"Send updated scope revision to Elena Rostova\" to completed",
+      "timestamp": "2026-10-24T12:15:29.514Z"
+    },
+    {
+      "id": "audit-1792844127754-ywok",
+      "action": "UPDATE",
+      "entityType": "Task",
+      "entityId": "task-1792513510214",
+      "performedBy": "Admin",
+      "details": "Toggled task \"Respond to website inquiry: Taha Shah (dgfrs)\" to completed",
+      "timestamp": "2026-10-24T12:15:27.754Z"
+    },
+    {
+      "id": "audit-1792844123900-opqq",
+      "action": "UPDATE",
+      "entityType": "Task",
+      "entityId": "task-1792515022722",
+      "performedBy": "Admin",
+      "details": "Toggled task \"Respond to website inquiry: Taha Shah (gfh)\" to completed",
+      "timestamp": "2026-10-24T12:15:23.900Z"
+    },
+    {
+      "id": "audit-1792843781307-lr4g",
+      "action": "DELETE",
+      "entityType": "Lead",
+      "entityId": "lead-1792503267621",
+      "performedBy": "Admin",
+      "details": "Deleted lead dsf",
+      "timestamp": "2026-10-24T12:09:41.307Z"
+    },
+    {
+      "id": "audit-1792843715091-gnes",
+      "action": "UPDATE",
+      "entityType": "Contact",
+      "entityId": "contact-4",
+      "performedBy": "Admin",
+      "details": "Updated contact David Chen",
+      "timestamp": "2026-10-24T12:08:35.091Z"
+    },
+    {
+      "id": "audit-1792843705580-wpbf",
+      "action": "UPDATE",
+      "entityType": "Contact",
+      "entityId": "contact-1792513510209",
+      "performedBy": "Admin",
+      "details": "Updated contact Taha Shah",
+      "timestamp": "2026-10-24T12:08:25.580Z"
+    },
+    {
+      "id": "audit-1792843686482-mr09",
+      "action": "UPDATE",
+      "entityType": "Lead",
+      "entityId": "lead-2",
+      "performedBy": "Admin",
+      "details": "Updated lead Nexus Pay Real-Time Checkout Experience",
+      "timestamp": "2026-10-24T12:08:06.482Z"
+    },
+    {
+      "id": "audit-1792843684012-38zy",
+      "action": "UPDATE",
+      "entityType": "Lead",
+      "entityId": "lead-1",
+      "performedBy": "Admin",
+      "details": "Updated lead Synapse Flow Design System & App Architecture",
+      "timestamp": "2026-10-24T12:08:04.012Z"
+    },
+    {
+      "id": "audit-1792843680827-7jnj",
+      "action": "UPDATE",
+      "entityType": "Lead",
+      "entityId": "lead-1",
+      "performedBy": "Admin",
+      "details": "Updated lead Synapse Flow Design System & App Architecture",
+      "timestamp": "2026-10-24T12:08:00.827Z"
+    },
+    {
+      "id": "audit-1792843675130-u5rk",
+      "action": "UPDATE",
+      "entityType": "Lead",
+      "entityId": "lead-1792503267621",
+      "performedBy": "Admin",
+      "details": "Updated lead dsf",
+      "timestamp": "2026-10-24T12:07:55.130Z"
+    },
+    {
+      "id": "audit-1792843578904-8fyr",
+      "action": "UPDATE",
+      "entityType": "Lead",
+      "entityId": "lead-1792515022720",
+      "performedBy": "Admin",
+      "details": "Updated lead gfh — Inbound Project Inquiry",
+      "timestamp": "2026-10-24T12:06:18.904Z"
+    },
+    {
+      "id": "audit-1792843571663-wsdp",
+      "action": "UPDATE",
+      "entityType": "Lead",
+      "entityId": "lead-1792513510212",
+      "performedBy": "Admin",
+      "details": "Updated lead dgfrs — Inbound Project Inquiry",
+      "timestamp": "2026-10-24T12:06:11.663Z"
+    },
+    {
+      "id": "audit-1792843565641-e7ll",
+      "action": "UPDATE",
+      "entityType": "Lead",
+      "entityId": "lead-1792515022720",
+      "performedBy": "Admin",
+      "details": "Updated lead gfh — Inbound Project Inquiry",
+      "timestamp": "2026-10-24T12:06:05.641Z"
+    },
+    {
+      "id": "audit-1792843515652-j6hk",
+      "action": "UPDATE",
+      "entityType": "Contact",
+      "entityId": "contact-3",
+      "performedBy": "Admin",
+      "details": "Updated contact Elena Rostova",
+      "timestamp": "2026-10-24T12:05:15.652Z"
+    },
+    {
+      "id": "audit-1792843506464-h9gs",
+      "action": "UPDATE",
+      "entityType": "Contact",
+      "entityId": "contact-1792513510209",
+      "performedBy": "Admin",
+      "details": "Updated contact Taha Shah",
+      "timestamp": "2026-10-24T12:05:06.464Z"
+    },
+    {
+      "id": "audit-1792843057749-8e7q",
+      "action": "CREATE",
+      "entityType": "Task",
+      "entityId": "task-1792843057749",
+      "performedBy": "Admin",
+      "details": "Created task \"Client Request: Test Build\"",
+      "timestamp": "2026-10-24T11:57:37.749Z"
+    },
     {
       "id": "audit-1792515022722-cdzv",
       "action": "CREATE",

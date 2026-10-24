@@ -1,11 +1,11 @@
 {
   "companyName": "Quanta",
   "tagline": "A five-person engineering and design team turning ideas into thoughtful, reliable digital experiences.",
-  "email": "hello@quanta.studio",
+  "email": "quanta.studio@gmail.com",
   "location": "Remote — Worldwide",
-  "phone": "",
+  "phone": "0300-0010001",
   "socials": {
-    "twitter": "",
+    "twitter": "https://www.linkedin.com/company/quanta-5/posts/?feedView=all",
     "instagram": "",
     "facebook": "",
     "github": "",
@@ -15,10 +15,10 @@
     {
       "id": "social-twitter",
       "platform": "twitter",
-      "label": "X (Twitter)",
-      "ariaLabel": "Follow Quanta on X",
-      "url": "",
-      "icon": "twitter",
+      "label": "LinkedIn",
+      "ariaLabel": "Follow Quanta on LinkedIn",
+      "url": "https://www.linkedin.com/company/quanta-5/posts/?feedView=all",
+      "icon": "linkedin",
       "enabled": true,
       "order": 1
     },
@@ -92,7 +92,7 @@
     }
   ],
   "features": {
-    "partners": true,
+    "partners": false,
     "clients": true,
     "clientsOnHome": true,
     "portal": true

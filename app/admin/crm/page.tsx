@@ -1609,7 +1609,7 @@ export default function AdminCRMPage() {
                         <option value="Zeeshan Aftab">Zeeshan Aftab</option>
                         <option value="Yousaf Safeer">Yousaf Safeer</option>
                         <option value="Waleed Ahmad">Waleed Ahmad</option>
-                        <option value="Faseeh ur Rehman">Faseeh ur Rehman</option>
+                        <option value="Faseeh Ur Rahman">Faseeh Ur Rahman</option>
                       </select>
                     </div>
                     <div className="admin-form-group">
@@ -1795,7 +1795,7 @@ export default function AdminCRMPage() {
                         <option value="Zeeshan Aftab">Zeeshan Aftab</option>
                         <option value="Yousaf Safeer">Yousaf Safeer</option>
                         <option value="Waleed Ahmad">Waleed Ahmad</option>
-                        <option value="Faseeh ur Rehman">Faseeh ur Rehman</option>
+                        <option value="Faseeh Ur Rahman">Faseeh Ur Rahman</option>
                       </select>
                     </div>
                     <div className="admin-form-group">

@@ -1,5 +1,23 @@
 [
   {
+    "id": "msg-1792843057741-15kxp",
+    "name": "Taha Shah",
+    "email": "don.tahashah@gmail.com",
+    "company": "Quanta Studio Client",
+    "subject": "Test Build",
+    "message": "Bah Bah Bah",
+    "source": "client_portal",
+    "status": "read",
+    "createdAt": "2026-10-24T11:57:37.741Z",
+    "portalAccountId": "client-1792495246272",
+    "portalInquiryId": "inq-1792843057739",
+    "readAt": "2026-10-24T11:59:21.118Z",
+    "replyBody": "Hi Taha,\n\nThank you for reaching out to Quanta Studio regarding your project inquiry.\n\nWe have reviewed your details and would love to schedule a brief alignment call to discuss the scope and next steps.\n\nCould you let us know what days and times work best for your team this week?\n\nBest regards,\nQuanta Studio Team\nhttps://quanta.design",
+    "replySubject": "Re: Test Build — Quanta Studio",
+    "replySentBy": "Quanta Studio Team",
+    "repliedAt": "2026-10-24T12:00:08.256Z"
+  },
+  {
     "id": "msg-1792515022717-zikk0",
     "name": "Taha Shah",
     "email": "don.tahashah@gmail.com",
@@ -8,9 +26,13 @@
     "subject": "gfh — Project Inquiry",
     "message": "drfhgdgvcx",
     "source": "website_contact",
-    "status": "read",
+    "status": "replied",
     "createdAt": "2026-10-20T16:50:22.717Z",
-    "readAt": "2026-10-20T16:51:26.702Z"
+    "readAt": "2026-10-20T16:51:26.702Z",
+    "replyBody": "Hi Taha,\n\nThank you for reaching out to Quanta Studio regarding your project inquiry.\n\nWe have reviewed your details and would love to schedule a brief alignment call to discuss the scope and next steps.\n\nCould you let us know what days and times work best for your team this week?\n\nBest regards,\nQuanta Studio Team\nhttps://quanta.design",
+    "replySubject": "Re: gfh — Project Inquiry — Quanta Studio",
+    "replySentBy": "Quanta Studio Team",
+    "repliedAt": "2026-10-21T15:20:01.391Z"
   },
   {
     "id": "msg-1774892019482-a89f2",
@@ -21,8 +43,9 @@
     "subject": "Enterprise Web Platform & Design System Expansion",
     "message": "Hi Quanta team, we loved the outcome of Project Alpha and are looking to scale our digital ecosystem with a dedicated enterprise design system and multi-region micro-frontends. Would love to schedule a technical alignment call for next Tuesday.",
     "source": "website_contact",
-    "status": "unread",
-    "createdAt": "2026-03-28T14:32:00.000Z"
+    "status": "read",
+    "createdAt": "2026-03-28T14:32:00.000Z",
+    "readAt": "2026-10-21T15:20:08.664Z"
   },
   {
     "id": "msg-1774781920192-b43x1",

@@ -8,7 +8,11 @@
   "author": "Taha Shah",
   "authorRole": "Frontend Developer",
   "authorImage": "",
-  "tags": ["philosophy", "team", "software development"],
+  "tags": [
+    "philosophy",
+    "team",
+    "software development"
+  ],
   "readTime": 4,
   "published": true,
   "publishedAt": "2026-10-14T00:00:00.000Z",

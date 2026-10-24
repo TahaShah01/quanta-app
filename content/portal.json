@@ -5,14 +5,14 @@
       "name": "Taha Shah",
       "email": "don.tahashah@gmail.com",
       "company": "Quanta Studio Client",
-      "passwordHash": "scrypt$YCge6pQFXJi8hmuvrhea8g$78DLaSbkK6KKky3zpxaO26JLQsJfseDnYFf3brX5I5FbRp34m5C5Ag4SjsGCZ46ECjaMeAygvuQTvn82JTdVOw",
+      "passwordHash": "scrypt$nnb8c_Au657duUcNCMvhrg$IVl0s-eEsRksjlhVLKdmy98bjVzkKJ9ZWARzCzohGY8288jgSct3f7zgFPIgOGp70ecULWV-W80Uh1LdLGRYSA",
       "active": true,
       "createdAt": "2026-10-20T11:20:46.316Z",
-      "lastLoginAt": "2026-10-20T14:27:06.637Z",
+      "lastLoginAt": "2026-10-24T11:54:33.044Z",
       "project": {
         "name": "Next-Gen Web Platform",
         "summary": "Full-stack digital architecture, responsive design system, and verified client infrastructure.",
-        "status": "development",
+        "status": "completed",
         "progress": 80,
         "startDate": "2026-03-01",
         "targetDate": "2026-11-15",
@@ -54,8 +54,8 @@
             "url": "https://figma.com/@quanta",
             "version": "1.2",
             "status": "approved",
-            "feedback": "Approved with typography revisions incorporated.",
-            "updatedAt": "2026-05-05T12:00:00.000Z"
+            "feedback": "Good.",
+            "updatedAt": "2026-10-24T11:55:06.651Z"
           },
           {
             "id": "deliv-2",
@@ -80,10 +80,18 @@
             "title": "Review Release Candidate 1 Architecture Spec",
             "description": "Verify API endpoint schemas and deliverable approvals workflow.",
             "due": "2026-10-25",
-            "completed": false
+            "completed": true
           }
         ],
         "inquiries": [
+          {
+            "id": "inq-1792843057739",
+            "subject": "Test Build",
+            "message": "Bah Bah Bah",
+            "status": "resolved",
+            "createdAt": "2026-10-24T11:57:37.739Z",
+            "response": "Hi Taha,\n\nThank you for reaching out to Quanta Studio regarding your project inquiry.\n\nWe have reviewed your details and would love to schedule a brief alignment call to discuss the scope and next steps.\n\nCould you let us know what days and times work best for your team this week?\n\nBest regards,\nQuanta Studio Team\nhttps://quanta.design"
+          },
           {
             "id": "inq-1",
             "subject": "Authentication Session Expiry Configuration",
@@ -110,7 +118,158 @@
             "label": "Design Tokens & Figma",
             "url": "https://figma.com/@quanta"
           }
-        ]
+        ],
+        "completedAt": "2026-10-24T12:06:45.351Z"
+      }
+    },
+    {
+      "id": "client-1792845099255",
+      "name": "Elena Rostova",
+      "email": "elena@synapseflow.com",
+      "company": "Synapse Flow",
+      "passwordHash": "scrypt$KCa-FkJdG7ufo3DDFNviOQ$2TgKGsQOIhDWt2xbNBgACeZjeA516S3m2XPlzz432F0ULhbBjpKPMLrx3VM5h6SVYcYB59rOjdKCKzQuBTHkyg",
+      "active": true,
+      "createdAt": "2026-10-24T12:31:39.290Z",
+      "lastLoginAt": "",
+      "project": {
+        "name": "Synapse Flow Design System & App Architecture",
+        "summary": "Full design overhaul, component tokenization, Next.js implementation.",
+        "status": "development",
+        "progress": 15,
+        "startDate": "2026-10-24",
+        "targetDate": "2026-05-15",
+        "milestones": [
+          {
+            "id": "m1",
+            "title": "Discovery & Architectural Blueprint",
+            "status": "done",
+            "due": "",
+            "note": "Completed in qualification"
+          },
+          {
+            "id": "m2",
+            "title": "Design Systems & High-Fidelity Prototyping",
+            "status": "active",
+            "due": "",
+            "note": "In active design review"
+          },
+          {
+            "id": "m3",
+            "title": "Full-Stack Implementation & Integrations",
+            "status": "todo",
+            "due": "",
+            "note": ""
+          },
+          {
+            "id": "m4",
+            "title": "Quality Assurance & Launch",
+            "status": "todo",
+            "due": "",
+            "note": ""
+          }
+        ],
+        "deliverables": [],
+        "clientTasks": [
+          {
+            "id": "t1",
+            "title": "Provide Brand Guidelines & Assets",
+            "description": "Logos, brand tokens, and design references",
+            "due": "",
+            "completed": true
+          },
+          {
+            "id": "t2",
+            "title": "Review Initial Architecture Specs",
+            "description": "Sign-off on technical specifications document",
+            "due": "",
+            "completed": false
+          }
+        ],
+        "inquiries": [],
+        "updates": [
+          {
+            "id": "u1",
+            "date": "2026-10-24",
+            "title": "Engagement Kickoff",
+            "body": "Welcome to the Quanta studio client portal. Project workspace initialized."
+          }
+        ],
+        "links": []
+      }
+    },
+    {
+      "id": "client-1792845117680",
+      "name": "David Chen",
+      "email": "david@nexuspay.co",
+      "company": "Nexus Pay",
+      "passwordHash": "scrypt$O_xRRV4qx6AZGWDRkuIIDA$txooCzvSUsXeZ6cHyDrf82imVlvcPrptKfE7XSdJNCnxoUhTw7xSXoFGhgsV0g3dzHUQ50dJ89yOeUuLY1E5Hw",
+      "active": true,
+      "createdAt": "2026-10-24T12:31:57.716Z",
+      "lastLoginAt": "",
+      "project": {
+        "name": "Nexus Pay Real-Time Checkout Experience",
+        "summary": "Security-critical payment gateway frontend + API orchestration layer.",
+        "status": "design",
+        "progress": 15,
+        "startDate": "2026-10-24",
+        "targetDate": "2026-05-30",
+        "milestones": [
+          {
+            "id": "m1",
+            "title": "Discovery & Architectural Blueprint",
+            "status": "todo",
+            "due": "",
+            "note": "Completed in qualification"
+          },
+          {
+            "id": "m2",
+            "title": "Design Systems & High-Fidelity Prototyping",
+            "status": "active",
+            "due": "",
+            "note": "In active design review"
+          },
+          {
+            "id": "m3",
+            "title": "Full-Stack Implementation & Integrations",
+            "status": "todo",
+            "due": "",
+            "note": ""
+          },
+          {
+            "id": "m4",
+            "title": "Quality Assurance & Launch",
+            "status": "todo",
+            "due": "",
+            "note": ""
+          }
+        ],
+        "deliverables": [],
+        "clientTasks": [
+          {
+            "id": "t1",
+            "title": "Provide Brand Guidelines & Assets",
+            "description": "Logos, brand tokens, and design references",
+            "due": "",
+            "completed": true
+          },
+          {
+            "id": "t2",
+            "title": "Review Initial Architecture Specs",
+            "description": "Sign-off on technical specifications document",
+            "due": "",
+            "completed": false
+          }
+        ],
+        "inquiries": [],
+        "updates": [
+          {
+            "id": "u1",
+            "date": "2026-10-24",
+            "title": "Engagement Kickoff",
+            "body": "Welcome to the Quanta studio client portal. Project workspace initialized."
+          }
+        ],
+        "links": []
       }
     }
   ]
